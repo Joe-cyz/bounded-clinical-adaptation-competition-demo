@@ -4,6 +4,27 @@
 
 这个项目只用于比赛展示、学习和研究，不能用于真实诊疗，也不能代替医生判断。
 
+## 页面快照
+
+<table>
+  <tr>
+    <th>首页</th>
+    <th>病历记录</th>
+  </tr>
+  <tr>
+    <td><img src="public/screenshots/home.jpg" alt="首页" width="100%"></td>
+    <td><img src="public/screenshots/record.jpg" alt="病历记录" width="100%"></td>
+  </tr>
+  <tr>
+    <th>AI参考</th>
+    <th>诊疗复核</th>
+  </tr>
+  <tr>
+    <td><img src="public/screenshots/reference.jpg" alt="AI参考" width="100%"></td>
+    <td><img src="public/screenshots/review.jpg" alt="诊疗复核" width="100%"></td>
+  </tr>
+</table>
+
 ## 最简单的启动方式（Windows）
 
 如果你下载的是 Windows 便携版压缩包（`bounded-clinical-adaptation-windows-portable.zip`）：
