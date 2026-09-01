@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "recordDataVersion": "1.0.0",
+  "sourceDatasetVersion": "0.4.1",
+  "expectedCount": 24,
+  "syntheticOnly": true,
+  "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+  "sourceDescription": "PWR-03 受约束临床适配原型的完全虚构合成病历数据，仅用于领域建模、校验和后续人工复核流程准备。",
+  "demoDateWindow": {
+    "startDate": "2026-08-21",
+    "endDate": "2026-08-21"
+  },
+  "caseMatrix": {
+    "generalMedicine": {
+      "firstVisit": 6,
+      "chronicFollowUp": 6
+    },
+    "endocrinology": {
+      "firstVisit": 6,
+      "chronicFollowUp": 6
+    }
+  }
+}

@@ -1,0 +1,3633 @@
+[
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-first-001",
+    "caseVersion": "0.4.1-001",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-01",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 42
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-1"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "近两周晨起乏力，需整理睡眠、饮食和近期活动变化供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名中年成人近两周晨起乏力，午后活动后恢复较慢；不含身份信息。 近期变化：最近轮班作息增多；近一周进食时间不规律"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "近两周晨起乏力",
+          "活动后恢复较慢"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "最近轮班作息增多",
+          "近一周进食时间不规律"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述青霉素类过敏，反应细节待核对"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述偶尔使用非处方感冒药，名称与使用时间待核对"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "目前资料未覆盖持续胸闷、晕厥等危险信号"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "近期生命体征和必要检查结果待人工补充",
+        "过敏反应细节待核对"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-first-001-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "近期生命体征和必要检查结果待人工补充"
+      },
+      {
+        "id": "missing-general-first-001-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏反应细节待核对"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "乏力与作息、营养或其他因素的关联需要结合完整资料判断",
+        "若出现持续胸痛、晕厥等情况，应及时寻求线下医疗帮助"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-first-002",
+    "caseVersion": "0.4.1-002",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-02",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 35
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-2"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "起身时短暂头晕，需整理发生场景和伴随表现供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人记录到起身时短暂头晕，近期饮水减少；不含身份信息。 近期变化：近几天户外活动时间增加；头晕多发生在快速起身时"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "起身时短暂头晕",
+          "近期饮水减少"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近几天户外活动时间增加",
+          "头晕多发生在快速起身时"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "UNKNOWN"
+      },
+      "currentMedications": {
+        "status": "UNKNOWN"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "未记录持续意识改变或单侧无力，相关危险信号仍需人工核查"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "过敏史尚待核查",
+        "当前用药尚待核查",
+        "基础体征和头晕持续时长待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-first-002-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏史尚待核查"
+      },
+      {
+        "id": "missing-general-first-002-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "当前用药尚待核查"
+      },
+      {
+        "id": "missing-general-first-002-03",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "基础体征和头晕持续时长待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "头晕发生时的体位、持续时间和伴随表现是人工复核的重要信息",
+        "出现昏厥、持续胸痛或明显神经系统异常时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-first-003",
+    "caseVersion": "0.4.1-003",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-03",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 48
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-3"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "夜间干咳持续数日，需整理环境暴露和呼吸状况供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人在近期接触装修粉尘后出现夜间干咳；不含身份信息。 近期变化：近期接触装修粉尘环境；夜间咳嗽影响睡眠"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "夜间干咳五天",
+          "咽部刺激感"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近期接触装修粉尘环境",
+          "夜间咳嗽影响睡眠"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述无已知药物过敏，但来源待核对"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述近期使用含片，具体成分待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "咳嗽伴呼吸困难或咯血情况尚未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "体温、呼吸状况和既往呼吸道问题待补充",
+        "是否出现咯血待核查"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-first-003-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "体温、呼吸状况和既往呼吸道问题待补充"
+      },
+      {
+        "id": "missing-general-first-003-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "是否出现咯血待核查"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "咳嗽的持续时间、环境诱因和呼吸困难等信息需由人工确认",
+        "出现呼吸困难或咯血等危险信号应及时寻求线下医疗帮助"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-first-004",
+    "caseVersion": "0.4.1-004",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-04",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 39
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-1"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "餐后上腹胀满伴间歇反酸，需整理饮食时间和伴随表现供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人记录到餐后上腹胀满和间歇反酸，近期晚餐时间推迟；不含身份信息。 近期变化：近一周晚餐时间推迟；不适是否与油腻饮食相关仍待核查"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "餐后上腹胀满",
+          "间歇性反酸"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近一周晚餐时间推迟",
+          "不适是否与油腻饮食相关仍待核查"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "UNKNOWN"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述偶尔使用胃部不适相关非处方药，名称待核对"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "黑便、呕血和持续剧烈腹痛情况尚未记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "过敏史尚待核查",
+        "体重变化和排便情况待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-first-004-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏史尚待核查"
+      },
+      {
+        "id": "missing-general-first-004-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "体重变化和排便情况待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "饮食时间与症状关系属于待核对事实，不能单独形成诊断",
+        "出现呕血、黑便或持续剧烈腹痛应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-first-005",
+    "caseVersion": "0.4.1-005",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-05",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 56
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-2"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "傍晚双踝肿胀，需整理分布、时间变化和伴随症状供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人记录到傍晚双踝轻度肿胀，久坐后鞋袜较紧；不含身份信息。 近期变化：最近久坐时间延长；晨起与傍晚肿胀差异尚待观察"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "傍晚双踝轻度肿胀",
+          "久坐后鞋袜较紧"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "最近久坐时间延长",
+          "晨起与傍晚肿胀差异尚待观察"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述无明确药物过敏，仍待人工核对"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述正在使用一种长期药物，名称、用法和是否规律待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "单侧肢体明显肿痛、呼吸困难等危险信号未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "用药清单和基础体征待补充",
+        "肿胀是否单侧及按压变化待核查"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-first-005-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "用药清单和基础体征待补充"
+      },
+      {
+        "id": "missing-general-first-005-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "肿胀是否单侧及按压变化待核查"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "肿胀的分布、时间变化和伴随症状需要完整记录后人工判断",
+        "出现呼吸困难或单侧明显肿痛应及时线下医疗"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-first-006",
+    "caseVersion": "0.4.1-006",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-06",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 44
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-3"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "近期体重下降并伴食欲波动，需整理测量条件和全身表现供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人记录到一个月内体重下降趋势，同时食欲出现波动；不含身份信息。 近期变化：最近运动量增加；餐量变化由本人粗略估计"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "一个月内体重下降趋势",
+          "食欲波动"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "最近运动量增加",
+          "餐量变化由本人粗略估计"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述对某种食物不耐受，具体反应不清，需核查"
+      },
+      "currentMedications": {
+        "status": "UNKNOWN"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "食欲明显下降、持续发热等危险信号尚未完整排查"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "当前用药尚待核查",
+        "体重测量条件和近期发热情况待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-first-006-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "当前用药尚待核查"
+      },
+      {
+        "id": "missing-general-first-006-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "体重测量条件和近期发热情况待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "体重趋势应结合测量条件、饮食和活动记录人工核对",
+        "持续发热、明显乏力或无法进食等情况需要及时线下评估"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-followup-001",
+    "caseVersion": "0.4.1-007",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-07",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 58
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-1"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "既往血压记录不连续，需整理家庭测量条件和近期不适供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往血压偏高记录，近期家庭测量时间发生变化；不含身份信息。 近期变化：近两周测量时间从早晨改到晚间；偶有忘记记录"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往血压偏高记录",
+          "家庭监测记录不连续"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近两周测量时间从早晨改到晚间",
+          "偶有忘记记录"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往血压偏高记录；家庭监测记录不连续"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "既往记录显示无已知药物过敏，原始记录待核对"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述按原计划使用降压药，药名与实际使用情况待人工核对"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "家庭血压记录不完整，突发头痛、胸痛等危险信号需再核查"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "最近一次医疗记录和完整用药清单待补充",
+        "是否出现胸痛、气促或神经症状待核查"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-followup-001-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "最近一次医疗记录和完整用药清单待补充"
+      },
+      {
+        "id": "missing-general-followup-001-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "是否出现胸痛、气促或神经症状待核查"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "家庭测量条件和时间变化会影响记录解释，需要人工复核",
+        "突发胸痛、气促或神经系统异常应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-followup-002",
+    "caseVersion": "0.4.1-008",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-08",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 51
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-2"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "既往血脂异常需要整理饮食变化和用药核对信息供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往血脂异常记录，近期外卖频率下降但复查资料尚不完整；不含身份信息。 近期变化：最近减少外卖频率；复查时间尚未确定"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往血脂异常记录",
+          "近期饮食结构变化"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "最近减少外卖频率",
+          "复查时间尚未确定"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往血脂异常记录；近期饮食结构变化"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "UNKNOWN"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述正在使用调脂药物，名称、用法和近期是否漏用待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "肌肉明显疼痛、深色尿等情况未完整询问"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "过敏史尚待核查",
+        "实验室报告和用药核对待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-followup-002-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏史尚待核查"
+      },
+      {
+        "id": "missing-general-followup-002-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "实验室报告和用药核对待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "饮食记录和用药信息只能作为人工复核材料，不能单独推断指标变化",
+        "出现明显肌肉疼痛或深色尿等情况应及时线下咨询"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-followup-003",
+    "caseVersion": "0.4.1-009",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-09",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 62
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-3"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "既往尿酸偏高记录需整理饮水、饮食和关节不适变化供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往尿酸偏高记录，近期饮水和聚餐习惯变化；不含身份信息。 近期变化：近期饮水习惯改变；近来聚餐次数增加"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往尿酸偏高记录",
+          "足部间歇性不适"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近期饮水习惯改变",
+          "近来聚餐次数增加"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往尿酸偏高记录；足部间歇性不适"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述无明确药物过敏，待复核"
+      },
+      "currentMedications": {
+        "status": "UNKNOWN"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "突发剧烈关节痛、发热或尿量变化未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "当前用药尚待核查",
+        "相关检查资料和肾脏病史待人工补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-followup-003-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "当前用药尚待核查"
+      },
+      {
+        "id": "missing-general-followup-003-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "相关检查资料和肾脏病史待人工补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "饮食和饮水记录仅用于补全人工复核背景，不形成治疗建议",
+        "突发剧烈关节痛、发热或尿量明显变化时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-followup-004",
+    "caseVersion": "0.4.1-010",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-10",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 47
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-1"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "既往反流样不适近期时间模式变化，需整理饮食与平卧关系供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往反流样不适记录，近期晚餐时间推迟且平卧后不适变化待核对；不含身份信息。 近期变化：晚餐时间较前推迟；症状与平卧关系仍需记录"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往反流样不适",
+          "夜间平卧后不适"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "晚餐时间较前推迟",
+          "症状与平卧关系仍需记录"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往反流样不适；夜间平卧后不适"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "对某种食物曾有不适反应，性质待核查"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述按需使用胃部相关药物，名称与频次待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "吞咽困难、呕血和黑便信息未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "最近体重变化和排便情况待补充",
+        "危险信号和完整用药清单待核查"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-followup-004-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "最近体重变化和排便情况待补充"
+      },
+      {
+        "id": "missing-general-followup-004-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "危险信号和完整用药清单待核查"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "症状时间与进食、体位的关系需要完整记录后人工判断",
+        "出现吞咽困难、呕血或黑便应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-followup-005",
+    "caseVersion": "0.4.1-011",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-11",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 46
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-2"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "睡眠质量和日间注意力出现波动，需整理作息与夜间表现供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往睡眠质量下降记录，近期作息和电子屏使用时间变化；不含身份信息。 近期变化：近期作息时间前移；睡前电子屏使用时间增加"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往睡眠质量下降",
+          "日间注意力波动"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近期作息时间前移",
+          "睡前电子屏使用时间增加"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往睡眠质量下降；日间注意力波动"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "UNKNOWN"
+      },
+      "currentMedications": {
+        "status": "UNKNOWN"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "夜间呼吸暂停、晨起严重嗜睡等信息未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "过敏史尚待核查",
+        "当前用药尚待核查",
+        "打鼾、呼吸暂停和情绪变化待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-followup-005-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏史尚待核查"
+      },
+      {
+        "id": "missing-general-followup-005-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "当前用药尚待核查"
+      },
+      {
+        "id": "missing-general-followup-005-03",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "打鼾、呼吸暂停和情绪变化待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "作息、夜间呼吸表现和日间功能需要一起记录供人工复核",
+        "出现持续意识异常或明显呼吸问题时应及时线下求助"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "general-followup-006",
+    "caseVersion": "0.4.1-012",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-12",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 60
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-3"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "既往肝功能指标异常记录需要整理保健品、饮酒和近期症状供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往肝功能指标异常记录，近期保健品来源发生变化；不含身份信息。 近期变化：保健品种类发生变化；最近饮酒情况记录不完整"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往肝功能指标异常记录",
+          "近期食欲变化"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "保健品种类发生变化",
+          "最近饮酒情况记录不完整"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往肝功能指标异常记录；近期食欲变化"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述无药物过敏，原始记录待核对"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述使用保健品，成分和频次待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "皮肤或眼部发黄、意识变化、腹部明显疼痛未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "近期检查报告和完整用药清单待补充",
+        "皮肤眼部颜色和腹部不适待核查"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-general-followup-006-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "近期检查报告和完整用药清单待补充"
+      },
+      {
+        "id": "missing-general-followup-006-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "皮肤眼部颜色和腹部不适待核查"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "保健品成分和饮酒记录是人工复核时需要核对的背景信息",
+        "出现明显黄疸、意识变化或持续腹痛应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-first-001",
+    "caseVersion": "0.4.1-013",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-13",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 43
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-1"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "体检材料出现血糖异常线索，需整理原始报告和相关症状供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人在体检材料中出现血糖异常线索，并记录到餐后困倦；不含身份信息。 近期变化：近一个月含糖饮料选择发生变化；近期活动量减少"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "体检提示血糖异常线索",
+          "餐后困倦"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近一个月含糖饮料选择发生变化",
+          "近期活动量减少"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "UNKNOWN"
+      },
+      "currentMedications": {
+        "status": "UNKNOWN"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "口渴、多尿、意识变化等伴随信号记录不完整"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "过敏史尚待核查",
+        "当前用药尚待核查",
+        "原始检查报告和排尿饮水变化待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-first-001-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏史尚待核查"
+      },
+      {
+        "id": "missing-endo-first-001-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "当前用药尚待核查"
+      },
+      {
+        "id": "missing-endo-first-001-03",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "原始检查报告和排尿饮水变化待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "单次异常线索不能形成新诊断，原始报告需要人工核对",
+        "出现意识变化、明显脱水或持续呕吐时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-first-002",
+    "caseVersion": "0.4.1-014",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-14",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 38
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-2"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "口渴和夜间起夜增多，需整理饮水、尿量与睡眠变化供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人记录到口渴增多和夜间起夜次数变化，近期饮水模式不同；不含身份信息。 近期变化：工作日饮水模式改变；夜间睡眠被多次打断"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "口渴增多",
+          "夜间起夜次数增加"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "工作日饮水模式改变",
+          "夜间睡眠被多次打断"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述无药物过敏，待核对"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述偶尔使用非处方止痛药，名称待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "明显脱水、意识改变等危险信号未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "饮水量、尿量和基础检查资料待补充",
+        "近期体重与用药细节待核查"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-first-002-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "饮水量、尿量和基础检查资料待补充"
+      },
+      {
+        "id": "missing-endo-first-002-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "近期体重与用药细节待核查"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "口渴和起夜的时间模式需要结合完整资料人工判断",
+        "出现明显脱水、意识改变或无法饮水时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-first-003",
+    "caseVersion": "0.4.1-015",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-15",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 52
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-3"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "颈前不适伴怕热和出汗变化，需整理局部表现和心悸相关信息供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人记录到颈前不适、怕热和出汗变化，近期心率自觉波动；不含身份信息。 近期变化：近两周心率自觉波动；体重记录不连续"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "颈前不适感",
+          "怕热与出汗变化"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近两周心率自觉波动",
+          "体重记录不连续"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "UNKNOWN"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述近期未能核对当前用药，清单待补"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "心悸伴晕厥或明显气促尚未完整排查"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "过敏史尚待核查",
+        "颈部外观、吞咽呼吸情况和既往检查待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-first-003-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏史尚待核查"
+      },
+      {
+        "id": "missing-endo-first-003-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "颈部外观、吞咽呼吸情况和既往检查待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "症状线索不等于新诊断，颈部与心悸信息需由人工核对",
+        "出现晕厥、明显气促或吞咽呼吸困难应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-first-004",
+    "caseVersion": "0.4.1-016",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-16",
+      "sex": {
+        "status": "PROVIDED",
+        "value": "FEMALE"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 34
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-1"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "月经周期改变并伴疲劳感，需整理周期记录、用药与相关背景供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年女性记录到月经周期改变和疲劳感增加，近期运动量减少；不含身份信息。 近期变化：近两周期日期记录不完整；近期运动量减少"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "月经周期改变",
+          "疲劳感增加"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近两周期日期记录不完整",
+          "近期运动量减少"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述无明确药物过敏，待核查"
+      },
+      "currentMedications": {
+        "status": "UNKNOWN"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "大量出血、晕厥等危险信号未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "当前用药尚待核查",
+        "既往相关检查和是否存在大量出血待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-first-004-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "当前用药尚待核查"
+      },
+      {
+        "id": "missing-endo-first-004-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "既往相关检查和是否存在大量出血待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "周期记录和伴随表现需要完整后由人工复核，不据此形成诊断",
+        "出现大量出血、晕厥或明显虚弱时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-first-005",
+    "caseVersion": "0.4.1-017",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-17",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 49
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-2"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "体重增加趋势伴进食时间改变，需整理活动、睡眠和既往问题供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人记录到体重增加趋势，近来夜间加餐次数增加且久坐时间变长；不含身份信息。 近期变化：夜间加餐次数增加；久坐时间延长"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "体重增加趋势",
+          "进食时间不规律"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "夜间加餐次数增加",
+          "久坐时间延长"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述对某种外用产品有皮肤不适，性质待核查"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述使用营养补充品，成分和频次待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "持续呕吐、明显脱水等危险信号未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "近期体重测量条件和基础检查待补充",
+        "呕吐、饮水和睡眠情况待核查"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-first-005-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "近期体重测量条件和基础检查待补充"
+      },
+      {
+        "id": "missing-endo-first-005-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "呕吐、饮水和睡眠情况待核查"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "体重和进食记录只用于补全人工复核背景，不构成管理建议",
+        "出现持续呕吐、明显脱水或意识异常时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-first-006",
+    "caseVersion": "0.4.1-018",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-18",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 45
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-3"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "骨健康既往记录需要整理活动变化、疼痛特点和既往资料供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人带来骨健康相关既往问题记录，近期户外活动减少并偶发腰背不适；不含身份信息。 近期变化：近期户外活动减少；既往检查资料未随访"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "骨健康相关既往问题记录",
+          "偶发腰背不适"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近期户外活动减少",
+          "既往检查资料未随访"
+        ]
+      },
+      "pastHistory": {
+        "status": "UNKNOWN"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "UNKNOWN"
+      },
+      "currentMedications": {
+        "status": "UNKNOWN"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "跌倒后持续疼痛、肢体无力等危险信号未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "过敏史尚待核查",
+        "当前用药尚待核查",
+        "既往检查报告和跌倒史待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-first-006-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏史尚待核查"
+      },
+      {
+        "id": "missing-endo-first-006-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "当前用药尚待核查"
+      },
+      {
+        "id": "missing-endo-first-006-03",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "既往检查报告和跌倒史待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "骨痛、外伤史和既往资料需要一并核对，不能由单条描述推断结论",
+        "跌倒后持续疼痛、肢体无力或活动明显受限时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-followup-001",
+    "caseVersion": "0.4.1-019",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-19",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 57
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-1"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "既往血糖管理问题的记录不连续，需整理监测时间、用药和危险信号供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往血糖管理问题记录，近期自我监测时间改变且饮食记录中断；不含身份信息。 近期变化：近期测量时间改变；饮食记录中断"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往血糖管理问题",
+          "自我监测记录不连续"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近期测量时间改变",
+          "饮食记录中断"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往血糖管理问题；自我监测记录不连续"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "既往记录显示无已知药物过敏，待核对"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述按既有方案使用降糖药，名称和用法待复核"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "低血糖样表现、持续呕吐等危险信号记录不完整"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "最近检查报告和完整用药清单待补充",
+        "是否出现出汗、意识改变等表现待核查"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-followup-001-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "最近检查报告和完整用药清单待补充"
+      },
+      {
+        "id": "missing-endo-followup-001-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "是否出现出汗、意识改变等表现待核查"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "监测和饮食记录供人工复核，不能据此改变用药方案",
+        "出现意识改变、持续呕吐或明显脱水时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-followup-002",
+    "caseVersion": "0.4.1-020",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-20",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 63
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-2"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "既往甲状腺功能随访资料不完整，需整理用药核对和近期症状供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往甲状腺功能随访记录，近期用药时间和睡眠情况出现记录缺口；不含身份信息。 近期变化：近期漏记数次用药时间；睡眠模式发生变化"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往甲状腺功能随访记录",
+          "近期乏力波动"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近期漏记数次用药时间",
+          "睡眠模式发生变化"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往甲状腺功能随访记录；近期乏力波动"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "UNKNOWN"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述正在使用甲状腺相关长期药物，名称与用法待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "心悸、晕厥、吞咽呼吸困难等未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "过敏史尚待核查",
+        "复查报告和心悸、吞咽情况待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-followup-002-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏史尚待核查"
+      },
+      {
+        "id": "missing-endo-followup-002-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "复查报告和心悸、吞咽情况待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "用药名称、时间和复查资料需要人工核对，不据此推导用药变化",
+        "出现晕厥、明显气促或吞咽呼吸困难时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-followup-003",
+    "caseVersion": "0.4.1-021",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-21",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 41
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-3"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "体重趋势记录不连续，需整理进食时间、活动和补充品信息供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往体重管理随访记录，近期早餐习惯和日常步行时间改变；不含身份信息。 近期变化：工作日早餐习惯改变；日常步行时间减少"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往体重管理随访记录",
+          "腰围趋势记录不连续"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "工作日早餐习惯改变",
+          "日常步行时间减少"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往体重管理随访记录；腰围趋势记录不连续"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述无明确药物过敏，待核查"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述使用营养补充品，成分和频次待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "进食障碍、持续呕吐或晕厥等未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "近期体重测量条件和睡眠情况待补充",
+        "进食困难及晕厥情况待核查"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-followup-003-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "近期体重测量条件和睡眠情况待补充"
+      },
+      {
+        "id": "missing-endo-followup-003-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "进食困难及晕厥情况待核查"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "体重、进食和活动记录用于人工复核，不代表自动形成管理方案",
+        "出现持续呕吐、进食困难或晕厥时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-followup-004",
+    "caseVersion": "0.4.1-022",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-22",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 59
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-1"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "既往骨密度随访资料缺少原始报告，需整理活动变化和疼痛情况供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往骨密度随访记录，近期户外活动减少且复诊资料未带齐；不含身份信息。 近期变化：最近户外活动减少；复诊资料未带齐"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往骨密度随访记录",
+          "近期腰背酸痛"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "最近户外活动减少",
+          "复诊资料未带齐"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往骨密度随访记录；近期腰背酸痛"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "UNKNOWN"
+      },
+      "currentMedications": {
+        "status": "UNKNOWN"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "新发剧烈骨痛、跌倒后活动受限等未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "过敏史尚待核查",
+        "当前用药尚待核查",
+        "既往报告和跌倒史待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-followup-004-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏史尚待核查"
+      },
+      {
+        "id": "missing-endo-followup-004-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "当前用药尚待核查"
+      },
+      {
+        "id": "missing-endo-followup-004-03",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "既往报告和跌倒史待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "原始报告、疼痛和外伤信息需要人工核对，不能由摘要替代",
+        "新发剧烈疼痛或跌倒后活动受限时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-followup-005",
+    "caseVersion": "0.4.1-023",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-23",
+      "sex": {
+        "status": "PROVIDED",
+        "value": "FEMALE"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 37
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-2"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "既往周期与代谢问题记录不完整，需整理周期、饮食作息和伴随表现供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年女性有既往月经周期与代谢问题记录，近三个月周期和作息资料存在缺口；不含身份信息。 近期变化：近三个月周期记录有缺口；近期饮食作息发生变化"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往月经周期与代谢问题记录",
+          "疲劳感波动"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "近三个月周期记录有缺口",
+          "近期饮食作息发生变化"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往月经周期与代谢问题记录；疲劳感波动"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述无明确药物过敏，待核对"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述间断使用补充剂，成分和用法待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "异常大量出血、晕厥等危险信号未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "最近相关检查和完整用药清单待补充",
+        "出血量、疼痛和妊娠可能性相关信息待人工核查"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-followup-005-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "最近相关检查和完整用药清单待补充"
+      },
+      {
+        "id": "missing-endo-followup-005-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "出血量、疼痛和妊娠可能性相关信息待人工核查"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "周期、用药和相关背景需要完整记录后人工复核，不自动形成诊断",
+        "出现异常大量出血、剧烈疼痛或晕厥时应及时线下就医"
+      ]
+    }
+  },
+  {
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "caseId": "endo-followup-006",
+    "caseVersion": "0.4.1-024",
+    "recordDataVersion": "1.0.0",
+    "sourceDatasetVersion": "0.4.1",
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW",
+    "sourceDescription": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。 本记录为 PWR-03 独立病历数据整理，仍需领域复核。",
+    "physicianConfirmationStatus": "UNCONFIRMED",
+    "demographics": {
+      "displayLabel": "合成患者-24",
+      "sex": {
+        "status": "UNKNOWN"
+      },
+      "age": {
+        "status": "PROVIDED",
+        "value": 66
+      },
+      "occupation": {
+        "status": "UNKNOWN"
+      },
+      "ethnicity": {
+        "status": "UNKNOWN"
+      },
+      "maritalStatus": {
+        "status": "UNKNOWN"
+      },
+      "syntheticRegion": {
+        "status": "PROVIDED",
+        "value": "合成区域-3"
+      },
+      "visitDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      },
+      "admissionDate": {
+        "status": "NOT_APPLICABLE"
+      },
+      "recordDate": {
+        "status": "PROVIDED",
+        "value": "2026-08-21"
+      }
+    },
+    "history": {
+      "chiefComplaint": {
+        "status": "PROVIDED",
+        "value": "骨健康相关既往检查记录需要整理补充剂、活动和肌力变化供人工复核。"
+      },
+      "presentIllness": {
+        "status": "PROVIDED",
+        "value": "完全虚构合成病例：一名成年人有既往维生素D检查偏低记录，近期补充剂来源和户外活动发生变化；不含身份信息。 近期变化：补充剂来源发生变化；户外活动时间下降"
+      },
+      "problemFacts": {
+        "status": "PROVIDED",
+        "items": [
+          "既往维生素D检查偏低记录",
+          "冬季户外活动减少"
+        ]
+      },
+      "recentChanges": {
+        "status": "PROVIDED",
+        "items": [
+          "补充剂来源发生变化",
+          "户外活动时间下降"
+        ]
+      },
+      "pastHistory": {
+        "status": "PROVIDED",
+        "value": "既往合成资料关注项：既往维生素D检查偏低记录；冬季户外活动减少"
+      },
+      "personalHistory": {
+        "status": "UNKNOWN"
+      },
+      "familyHistory": {
+        "status": "UNKNOWN"
+      },
+      "allergyHistory": {
+        "status": "UNKNOWN"
+      },
+      "currentMedications": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "value": "自述间断使用补充剂，成分和用法待核查"
+      },
+      "redFlags": {
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "items": [
+          "肌无力、跌倒或严重骨痛等危险信号未完整记录"
+        ]
+      }
+    },
+    "physicalExam": {
+      "vitalSigns": {
+        "status": "UNKNOWN"
+      },
+      "generalCondition": {
+        "status": "UNKNOWN"
+      },
+      "specialtyExam": {
+        "status": "UNKNOWN"
+      },
+      "notExaminedOrUnknown": {
+        "status": "UNKNOWN"
+      }
+    },
+    "auxiliaryExams": {
+      "laboratory": {
+        "status": "UNKNOWN"
+      },
+      "electrocardiogram": {
+        "status": "UNKNOWN"
+      },
+      "imaging": {
+        "status": "UNKNOWN"
+      },
+      "other": {
+        "status": "UNKNOWN"
+      }
+    },
+    "missingInformation": {
+      "status": "PROVIDED",
+      "items": [
+        "过敏史尚待核查",
+        "既往检查报告、跌倒史和肌力变化待补充"
+      ]
+    },
+    "pendingInformation": [
+      {
+        "id": "missing-endo-followup-006-01",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "过敏史尚待核查"
+      },
+      {
+        "id": "missing-endo-followup-006-02",
+        "category": "PHYSICIAN_FOLLOW_UP",
+        "status": "PENDING_PHYSICIAN_CONFIRMATION",
+        "description": "既往检查报告、跌倒史和肌力变化待补充"
+      }
+    ],
+    "patientEducationFacts": {
+      "status": "PROVIDED",
+      "items": [
+        "补充剂成分和既往报告需要人工核对，不能自动推导补充方案",
+        "出现肌无力、跌倒或严重骨痛时应及时线下就医"
+      ]
+    }
+  }
+]

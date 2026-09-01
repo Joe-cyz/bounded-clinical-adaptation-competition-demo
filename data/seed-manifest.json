@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetVersion": "0.1.0",
+  "safetyCoreVersion": "0.1.0",
+  "caseSet": {
+    "version": "0.1.0",
+    "expectedCount": 4
+  },
+  "physicianProfileSet": {
+    "version": "0.1.0",
+    "expectedCount": 3
+  },
+  "specialtyPolicySet": {
+    "version": "0.1.0",
+    "expectedCount": 3
+  },
+  "generatedAt": "2026-08-19",
+  "syntheticOnly": true
+}

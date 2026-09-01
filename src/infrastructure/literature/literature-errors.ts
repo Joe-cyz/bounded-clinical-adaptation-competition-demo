@@ -1,0 +1,56 @@
+import { PersistenceError, persistenceErrorCodes, type PersistenceErrorCode } from "@/infrastructure/sqlite/errors";
+
+export type LiteratureErrorCode = Extract<
+  PersistenceErrorCode,
+  `LITERATURE_${string}`
+>;
+
+export function literatureError(code: LiteratureErrorCode, message = "Literature import request failed."): PersistenceError {
+  return new PersistenceError(code, message);
+}
+
+export function isLiteratureError(error: unknown): error is PersistenceError & { code: LiteratureErrorCode } {
+  return error instanceof PersistenceError && error.code.startsWith("LITERATURE_");
+}
+
+export const literatureErrorCodes = {
+  INVALID_REQUEST: persistenceErrorCodes.LITERATURE_INVALID_REQUEST,
+  REQUEST_TOO_LARGE: persistenceErrorCodes.LITERATURE_REQUEST_TOO_LARGE,
+  ORIGIN_REJECTED: persistenceErrorCodes.LITERATURE_ORIGIN_REJECTED,
+  CONTENT_TYPE_INVALID: persistenceErrorCodes.LITERATURE_CONTENT_TYPE_INVALID,
+  LENGTH_MISMATCH: persistenceErrorCodes.LITERATURE_LENGTH_MISMATCH,
+  FILE_TOO_LARGE: persistenceErrorCodes.LITERATURE_FILE_TOO_LARGE,
+  BATCH_TOO_LARGE: persistenceErrorCodes.LITERATURE_BATCH_TOO_LARGE,
+  UNSUPPORTED_FORMAT: persistenceErrorCodes.LITERATURE_UNSUPPORTED_FORMAT,
+  INVALID_FILENAME: persistenceErrorCodes.LITERATURE_INVALID_FILENAME,
+  INVALID_PDF: persistenceErrorCodes.LITERATURE_INVALID_PDF,
+  INVALID_TEXT: persistenceErrorCodes.LITERATURE_INVALID_TEXT,
+  STREAM_ABORTED: persistenceErrorCodes.LITERATURE_STREAM_ABORTED,
+  DUPLICATE_CONTENT: persistenceErrorCodes.LITERATURE_DUPLICATE_CONTENT,
+  REPLAYED: persistenceErrorCodes.LITERATURE_REPLAYED,
+  BATCH_CONFLICT: persistenceErrorCodes.LITERATURE_BATCH_CONFLICT,
+  VERSION_CONFLICT: persistenceErrorCodes.LITERATURE_VERSION_CONFLICT,
+  CLEANUP_FAILED: persistenceErrorCodes.LITERATURE_CLEANUP_FAILED,
+  STORAGE_FAILED: persistenceErrorCodes.LITERATURE_STORAGE_FAILED,
+  CONSISTENCY_FAILED: persistenceErrorCodes.LITERATURE_CONSISTENCY_FAILED,
+  EVIDENCE_AUTHORIZATION_REQUIRED: persistenceErrorCodes.LITERATURE_EVIDENCE_AUTHORIZATION_REQUIRED,
+  PARSE_INVALID_REQUEST: persistenceErrorCodes.LITERATURE_PARSE_INVALID_REQUEST,
+  PARSE_REQUEST_CONFLICT: persistenceErrorCodes.LITERATURE_PARSE_REQUEST_CONFLICT,
+  PARSE_IN_PROGRESS: persistenceErrorCodes.LITERATURE_PARSE_IN_PROGRESS,
+  PARSE_ENCRYPTED_PDF: persistenceErrorCodes.LITERATURE_PARSE_ENCRYPTED_PDF,
+  PARSE_NO_TEXT_LAYER: persistenceErrorCodes.LITERATURE_PARSE_NO_TEXT_LAYER,
+  PARSE_PAGES_EXCEEDED: persistenceErrorCodes.LITERATURE_PARSE_PAGES_EXCEEDED,
+  PARSE_PAGE_TEXT_EXCEEDED: persistenceErrorCodes.LITERATURE_PARSE_PAGE_TEXT_EXCEEDED,
+  PARSE_DOCUMENT_TEXT_EXCEEDED: persistenceErrorCodes.LITERATURE_PARSE_DOCUMENT_TEXT_EXCEEDED,
+  PARSE_FRAGMENTS_EXCEEDED: persistenceErrorCodes.LITERATURE_PARSE_FRAGMENTS_EXCEEDED,
+  PARSE_TIMEOUT: persistenceErrorCodes.LITERATURE_PARSE_TIMEOUT,
+  PARSE_CRASHED: persistenceErrorCodes.LITERATURE_PARSE_CRASHED,
+  PARSE_SHA_MISMATCH: persistenceErrorCodes.LITERATURE_PARSE_SHA_MISMATCH,
+  PARSE_UNSAFE_OBJECT_PATH: persistenceErrorCodes.LITERATURE_PARSE_UNSAFE_OBJECT_PATH,
+  PARSE_STORAGE_MISSING: persistenceErrorCodes.LITERATURE_PARSE_STORAGE_MISSING,
+  PARSE_INVALID_PDF: persistenceErrorCodes.LITERATURE_PARSE_INVALID_PDF,
+  PARSE_INVALID_TEXT: persistenceErrorCodes.LITERATURE_PARSE_INVALID_TEXT,
+  PARSE_UNSUPPORTED_FORMAT: persistenceErrorCodes.LITERATURE_PARSE_UNSUPPORTED_FORMAT,
+  PARSE_PUBLISH_FAILED: persistenceErrorCodes.LITERATURE_PARSE_PUBLISH_FAILED,
+  PARSE_CLEANUP_FAILED: persistenceErrorCodes.LITERATURE_PARSE_CLEANUP_FAILED,
+} as const;

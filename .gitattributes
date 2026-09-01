@@ -1,0 +1,13 @@
+* text=auto eol=lf
+
+*.docx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pptx binary
+*.cmd text eol=crlf
+*.sh text eol=lf
+
+# Release artifacts are hash-locked; preserve their exact bytes, including CSV CRLF.
+artifacts/release/v1.0.0-competition/* binary

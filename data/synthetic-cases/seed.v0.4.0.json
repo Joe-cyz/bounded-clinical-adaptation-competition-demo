@@ -1,0 +1,994 @@
+[
+  {
+    "id": "general-first-001",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-001",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "title": "普通内科初诊资料整理（合成001）",
+    "patientSummary": "完全虚构合成病例001：用于验证普通内科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科初诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项001"
+    ],
+    "recentChanges": [
+      "合成近期变化记录001，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-first-002",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-002",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "title": "普通内科初诊资料整理（合成002）",
+    "patientSummary": "完全虚构合成病例002：用于验证普通内科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科初诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项002"
+    ],
+    "recentChanges": [
+      "合成近期变化记录002，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-first-003",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-003",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "title": "普通内科初诊资料整理（合成003）",
+    "patientSummary": "完全虚构合成病例003：用于验证普通内科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科初诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项003"
+    ],
+    "recentChanges": [
+      "合成近期变化记录003，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-first-004",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-004",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "title": "普通内科初诊资料整理（合成004）",
+    "patientSummary": "完全虚构合成病例004：用于验证普通内科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科初诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项004"
+    ],
+    "recentChanges": [
+      "合成近期变化记录004，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-first-005",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-005",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "title": "普通内科初诊资料整理（合成005）",
+    "patientSummary": "完全虚构合成病例005：用于验证普通内科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科初诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项005"
+    ],
+    "recentChanges": [
+      "合成近期变化记录005，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-first-006",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-006",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "title": "普通内科初诊资料整理（合成006）",
+    "patientSummary": "完全虚构合成病例006：用于验证普通内科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科初诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项006"
+    ],
+    "recentChanges": [
+      "合成近期变化记录006，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-followup-001",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-007",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "title": "普通内科慢病复诊资料整理（合成007）",
+    "patientSummary": "完全虚构合成病例007：用于验证普通内科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科慢病复诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项007"
+    ],
+    "recentChanges": [
+      "合成近期变化记录007，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-followup-002",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-008",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "title": "普通内科慢病复诊资料整理（合成008）",
+    "patientSummary": "完全虚构合成病例008：用于验证普通内科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科慢病复诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项008"
+    ],
+    "recentChanges": [
+      "合成近期变化记录008，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-followup-003",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-009",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "title": "普通内科慢病复诊资料整理（合成009）",
+    "patientSummary": "完全虚构合成病例009：用于验证普通内科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科慢病复诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项009"
+    ],
+    "recentChanges": [
+      "合成近期变化记录009，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-followup-004",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-010",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "title": "普通内科慢病复诊资料整理（合成010）",
+    "patientSummary": "完全虚构合成病例010：用于验证普通内科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科慢病复诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项010"
+    ],
+    "recentChanges": [
+      "合成近期变化记录010，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-followup-005",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-011",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "title": "普通内科慢病复诊资料整理（合成011）",
+    "patientSummary": "完全虚构合成病例011：用于验证普通内科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科慢病复诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项011"
+    ],
+    "recentChanges": [
+      "合成近期变化记录011，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "general-followup-006",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-012",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "title": "普通内科慢病复诊资料整理（合成012）",
+    "patientSummary": "完全虚构合成病例012：用于验证普通内科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理普通内科慢病复诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项012"
+    ],
+    "recentChanges": [
+      "合成近期变化记录012，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-first-001",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-013",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "title": "内分泌科初诊资料整理（合成013）",
+    "patientSummary": "完全虚构合成病例013：用于验证内分泌科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科初诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项013"
+    ],
+    "recentChanges": [
+      "合成近期变化记录013，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-first-002",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-014",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "title": "内分泌科初诊资料整理（合成014）",
+    "patientSummary": "完全虚构合成病例014：用于验证内分泌科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科初诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项014"
+    ],
+    "recentChanges": [
+      "合成近期变化记录014，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-first-003",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-015",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "title": "内分泌科初诊资料整理（合成015）",
+    "patientSummary": "完全虚构合成病例015：用于验证内分泌科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科初诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项015"
+    ],
+    "recentChanges": [
+      "合成近期变化记录015，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-first-004",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-016",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "title": "内分泌科初诊资料整理（合成016）",
+    "patientSummary": "完全虚构合成病例016：用于验证内分泌科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科初诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项016"
+    ],
+    "recentChanges": [
+      "合成近期变化记录016，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-first-005",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-017",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "title": "内分泌科初诊资料整理（合成017）",
+    "patientSummary": "完全虚构合成病例017：用于验证内分泌科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科初诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项017"
+    ],
+    "recentChanges": [
+      "合成近期变化记录017，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-first-006",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-018",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "title": "内分泌科初诊资料整理（合成018）",
+    "patientSummary": "完全虚构合成病例018：用于验证内分泌科初诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科初诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项018"
+    ],
+    "recentChanges": [
+      "合成近期变化记录018，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-followup-001",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-019",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "title": "内分泌科慢病复诊资料整理（合成019）",
+    "patientSummary": "完全虚构合成病例019：用于验证内分泌科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科慢病复诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项019"
+    ],
+    "recentChanges": [
+      "合成近期变化记录019，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-followup-002",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-020",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "title": "内分泌科慢病复诊资料整理（合成020）",
+    "patientSummary": "完全虚构合成病例020：用于验证内分泌科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科慢病复诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项020"
+    ],
+    "recentChanges": [
+      "合成近期变化记录020，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-followup-003",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-021",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "title": "内分泌科慢病复诊资料整理（合成021）",
+    "patientSummary": "完全虚构合成病例021：用于验证内分泌科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科慢病复诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项021"
+    ],
+    "recentChanges": [
+      "合成近期变化记录021，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-followup-004",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-022",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "title": "内分泌科慢病复诊资料整理（合成022）",
+    "patientSummary": "完全虚构合成病例022：用于验证内分泌科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科慢病复诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项022"
+    ],
+    "recentChanges": [
+      "合成近期变化记录022，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-followup-005",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-023",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "title": "内分泌科慢病复诊资料整理（合成023）",
+    "patientSummary": "完全虚构合成病例023：用于验证内分泌科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科慢病复诊重点，等待人工复核。",
+    "allergies": [
+      "过敏史存在但具体内容仅作合成占位，需人工确认"
+    ],
+    "currentMedications": [
+      "存在合成用药记录，名称与剂量需人工确认"
+    ],
+    "redFlags": [
+      "危险信号信息不完整，不能据此排除风险"
+    ],
+    "providedProblems": [
+      "合成结构化问题项023"
+    ],
+    "recentChanges": [
+      "合成近期变化记录023，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "关键检查结果待补充",
+      "就诊相关背景待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  },
+  {
+    "id": "endo-followup-006",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0-024",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "title": "内分泌科慢病复诊资料整理（合成024）",
+    "patientSummary": "完全虚构合成病例024：用于验证内分泌科慢病复诊的结构化事实、缺失信息和安全边界。",
+    "chiefConcern": "希望按固定工作流整理内分泌科慢病复诊重点，等待人工复核。",
+    "allergies": [],
+    "currentMedications": [],
+    "redFlags": [
+      "未报告预设危险信号，仍需人工核查"
+    ],
+    "providedProblems": [
+      "合成结构化问题项024"
+    ],
+    "recentChanges": [
+      "合成近期变化记录024，不包含真实时间或身份信息"
+    ],
+    "missingInformation": [
+      "完整生命体征待补充",
+      "既往史和用药细节待人工确认"
+    ],
+    "patientEducationFacts": [
+      "本草稿仅用于临床前软件测试，不能替代人工复核",
+      "如出现预设危险信号，应及时寻求线下医疗帮助"
+    ],
+    "mandatoryFields": [
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "draftDisclaimer"
+    ],
+    "sourceNote": "由项目组构造的合成数据，不对应真实患者，不构成临床验证。",
+    "contentReviewStatus": "PENDING_DOMAIN_REVIEW"
+  }
+]

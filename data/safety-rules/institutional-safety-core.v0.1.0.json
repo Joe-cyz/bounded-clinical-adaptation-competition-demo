@@ -1,0 +1,30 @@
+{
+  "id": "institutional-safety-core",
+  "schemaVersion": "1.0.0",
+  "version": "0.1.0",
+  "immutableForPhysician": true,
+  "mandatoryFields": [
+    "allergies",
+    "currentMedications",
+    "redFlags",
+    "missingInformation",
+    "draftDisclaimer"
+  ],
+  "prohibitedActions": [
+    "automatic-diagnosis",
+    "automatic-prescription",
+    "automatic-record-writeback",
+    "learning-from-unreviewed-edits",
+    "inventing-missing-facts"
+  ],
+  "draftDisclaimer": "AI生成草稿，仅用于模拟研究，必须由人工复核；不得用于真实诊疗。",
+  "allowedEvidenceSources": [
+    "VERSIONED_SYNTHETIC_CASE_FACTS",
+    "APPROVED_STATIC_TEST_MATERIALS"
+  ],
+  "approvalRequirements": [
+    "HUMAN_REVIEW_REQUIRED",
+    "MANDATORY_FIELDS_NOT_OVERRIDABLE",
+    "UNAPPROVED_FEEDBACK_NOT_EFFECTIVE"
+  ]
+}

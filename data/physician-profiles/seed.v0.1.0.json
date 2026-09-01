@@ -1,0 +1,77 @@
+[
+  {
+    "id": "profile-concise",
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "displayName": "简洁型医生画像",
+    "version": 1,
+    "status": "ACTIVE",
+    "preferences": {
+      "sectionOrder": [
+        "problems",
+        "recentChanges",
+        "redFlags",
+        "allergies",
+        "currentMedications",
+        "missingInformation",
+        "summary",
+        "patientEducation",
+        "draftDisclaimer"
+      ],
+      "verbosity": "BRIEF",
+      "expandAbbreviations": false,
+      "educationTone": "CONCISE"
+    },
+    "sourceNote": "由项目组构造的模拟工作流画像，不代表真实医生。"
+  },
+  {
+    "id": "profile-structured",
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "displayName": "结构型医生画像",
+    "version": 1,
+    "status": "ACTIVE",
+    "preferences": {
+      "sectionOrder": [
+        "summary",
+        "allergies",
+        "currentMedications",
+        "problems",
+        "recentChanges",
+        "redFlags",
+        "missingInformation",
+        "patientEducation",
+        "draftDisclaimer"
+      ],
+      "verbosity": "STANDARD",
+      "expandAbbreviations": true,
+      "educationTone": "PLAIN"
+    },
+    "sourceNote": "由项目组构造的模拟工作流画像，不代表真实医生。"
+  },
+  {
+    "id": "profile-communication",
+    "schemaVersion": "1.0.0",
+    "synthetic": true,
+    "displayName": "患者沟通型医生画像",
+    "version": 1,
+    "status": "ACTIVE",
+    "preferences": {
+      "sectionOrder": [
+        "summary",
+        "problems",
+        "redFlags",
+        "patientEducation",
+        "allergies",
+        "currentMedications",
+        "recentChanges",
+        "missingInformation",
+        "draftDisclaimer"
+      ],
+      "verbosity": "DETAILED",
+      "expandAbbreviations": true,
+      "educationTone": "SUPPORTIVE"
+    },
+    "sourceNote": "由项目组构造的模拟工作流画像，不代表真实医生。"
+  }
+]

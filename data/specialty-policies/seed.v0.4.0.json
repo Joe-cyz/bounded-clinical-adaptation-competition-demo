@@ -1,0 +1,142 @@
+[
+  {
+    "id": "general-first-v04-demo",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "初诊",
+    "approvalStatus": "APPROVED",
+    "approvalScope": "DEMO_ONLY",
+    "requiredSections": [
+      "summary",
+      "problems",
+      "recentChanges",
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "patientEducation",
+      "draftDisclaimer"
+    ],
+    "informationPriority": [
+      "summary",
+      "problems",
+      "missingInformation",
+      "redFlags",
+      "recentChanges",
+      "allergies",
+      "currentMedications",
+      "patientEducation",
+      "draftDisclaimer"
+    ],
+    "terminologyRules": {},
+    "approvedBy": "simulated-reviewer",
+    "sourceNote": "项目组构造的普通内科初诊演示策略，仅限 DEMO_ONLY，不代表医院正式批准。"
+  },
+  {
+    "id": "general-followup-v04-demo",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0",
+    "synthetic": true,
+    "specialty": "普通内科",
+    "visitType": "慢病复诊",
+    "approvalStatus": "APPROVED",
+    "approvalScope": "DEMO_ONLY",
+    "requiredSections": [
+      "summary",
+      "problems",
+      "recentChanges",
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "patientEducation",
+      "draftDisclaimer"
+    ],
+    "informationPriority": [
+      "currentMedications",
+      "recentChanges",
+      "problems",
+      "missingInformation",
+      "summary",
+      "allergies",
+      "redFlags",
+      "patientEducation",
+      "draftDisclaimer"
+    ],
+    "terminologyRules": {},
+    "approvedBy": "simulated-reviewer",
+    "sourceNote": "项目组构造的普通内科慢病复诊演示策略，仅限 DEMO_ONLY，不代表医院正式批准。"
+  },
+  {
+    "id": "endo-first-v04-demo",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "初诊",
+    "approvalStatus": "APPROVED",
+    "approvalScope": "DEMO_ONLY",
+    "requiredSections": [
+      "summary",
+      "problems",
+      "recentChanges",
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "patientEducation",
+      "draftDisclaimer"
+    ],
+    "informationPriority": [
+      "problems",
+      "missingInformation",
+      "currentMedications",
+      "redFlags",
+      "summary",
+      "recentChanges",
+      "allergies",
+      "patientEducation",
+      "draftDisclaimer"
+    ],
+    "terminologyRules": {},
+    "approvedBy": "simulated-reviewer",
+    "sourceNote": "项目组构造的内分泌科初诊演示策略，仅限 DEMO_ONLY，不代表医院正式批准。"
+  },
+  {
+    "id": "endo-followup-v04-demo",
+    "schemaVersion": "1.0.0",
+    "version": "0.4.0",
+    "synthetic": true,
+    "specialty": "内分泌科",
+    "visitType": "慢病复诊",
+    "approvalStatus": "APPROVED",
+    "approvalScope": "DEMO_ONLY",
+    "requiredSections": [
+      "summary",
+      "problems",
+      "recentChanges",
+      "allergies",
+      "currentMedications",
+      "redFlags",
+      "missingInformation",
+      "patientEducation",
+      "draftDisclaimer"
+    ],
+    "informationPriority": [
+      "currentMedications",
+      "problems",
+      "recentChanges",
+      "missingInformation",
+      "redFlags",
+      "summary",
+      "allergies",
+      "patientEducation",
+      "draftDisclaimer"
+    ],
+    "terminologyRules": {},
+    "approvedBy": "simulated-reviewer",
+    "sourceNote": "项目组构造的内分泌科慢病复诊演示策略，仅限 DEMO_ONLY，不代表医院正式批准。"
+  }
+]

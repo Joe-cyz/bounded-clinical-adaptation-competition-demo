@@ -1,0 +1,709 @@
+[
+  {
+    "fixtureId": "adv-low-001",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-001",
+    "caseVersion": "0.4.0-001",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REORDER_SECTIONS",
+      "fromSectionKey": "problems",
+      "toSectionKey": "summary"
+    },
+    "expectedRiskLevel": "LOW",
+    "expectedStatus": "CANDIDATE",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-low-002",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-002",
+    "caseVersion": "0.4.0-002",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REORDER_SECTIONS",
+      "fromSectionKey": "summary",
+      "toSectionKey": "recentChanges"
+    },
+    "expectedRiskLevel": "LOW",
+    "expectedStatus": "CANDIDATE",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-low-003",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-003",
+    "caseVersion": "0.4.0-003",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REORDER_SECTIONS",
+      "fromSectionKey": "recentChanges",
+      "toSectionKey": "patientEducation"
+    },
+    "expectedRiskLevel": "LOW",
+    "expectedStatus": "CANDIDATE",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-low-004",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-004",
+    "caseVersion": "0.4.0-004",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REORDER_SECTIONS",
+      "fromSectionKey": "patientEducation",
+      "toSectionKey": "allergies"
+    },
+    "expectedRiskLevel": "LOW",
+    "expectedStatus": "CANDIDATE",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-low-005",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-005",
+    "caseVersion": "0.4.0-005",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REORDER_SECTIONS",
+      "fromSectionKey": "allergies",
+      "toSectionKey": "currentMedications"
+    },
+    "expectedRiskLevel": "LOW",
+    "expectedStatus": "CANDIDATE",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-low-006",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-006",
+    "caseVersion": "0.4.0-006",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REORDER_SECTIONS",
+      "fromSectionKey": "currentMedications",
+      "toSectionKey": "redFlags"
+    },
+    "expectedRiskLevel": "LOW",
+    "expectedStatus": "CANDIDATE",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-low-007",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-001",
+    "caseVersion": "0.4.0-007",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REORDER_SECTIONS",
+      "fromSectionKey": "redFlags",
+      "toSectionKey": "missingInformation"
+    },
+    "expectedRiskLevel": "LOW",
+    "expectedStatus": "CANDIDATE",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-low-008",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-002",
+    "caseVersion": "0.4.0-008",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REORDER_SECTIONS",
+      "fromSectionKey": "missingInformation",
+      "toSectionKey": "problems"
+    },
+    "expectedRiskLevel": "LOW",
+    "expectedStatus": "CANDIDATE",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-low-009",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-003",
+    "caseVersion": "0.4.0-009",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REORDER_SECTIONS",
+      "fromSectionKey": "problems",
+      "toSectionKey": "summary"
+    },
+    "expectedRiskLevel": "LOW",
+    "expectedStatus": "CANDIDATE",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-low-010",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-004",
+    "caseVersion": "0.4.0-010",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REORDER_SECTIONS",
+      "fromSectionKey": "summary",
+      "toSectionKey": "recentChanges"
+    },
+    "expectedRiskLevel": "LOW",
+    "expectedStatus": "CANDIDATE",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-medium-001",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-005",
+    "caseVersion": "0.4.0-011",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "ADD_SECTION_LINE",
+      "sectionKey": "recentChanges",
+      "lineIndex": 0,
+      "contentKind": "SAFE_SYNTHETIC_LINE"
+    },
+    "expectedRiskLevel": "MEDIUM",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "MEDIUM_CONTENT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-medium-002",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-006",
+    "caseVersion": "0.4.0-012",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REWRITE_SECTION",
+      "sectionKey": "patientEducation",
+      "lineIndex": 0,
+      "contentKind": "SAFE_SYNTHETIC_LINE"
+    },
+    "expectedRiskLevel": "MEDIUM",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "MEDIUM_CONTENT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-medium-003",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-first-001",
+    "caseVersion": "0.4.0-013",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "ADD_SECTION_LINE",
+      "sectionKey": "allergies",
+      "lineIndex": 0,
+      "contentKind": "SAFE_SYNTHETIC_LINE"
+    },
+    "expectedRiskLevel": "MEDIUM",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "MEDIUM_CONTENT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-medium-004",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-first-002",
+    "caseVersion": "0.4.0-014",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REWRITE_SECTION",
+      "sectionKey": "currentMedications",
+      "lineIndex": 0,
+      "contentKind": "SAFE_SYNTHETIC_LINE"
+    },
+    "expectedRiskLevel": "MEDIUM",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "MEDIUM_CONTENT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-medium-005",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-first-003",
+    "caseVersion": "0.4.0-015",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "ADD_SECTION_LINE",
+      "sectionKey": "redFlags",
+      "lineIndex": 0,
+      "contentKind": "SAFE_SYNTHETIC_LINE"
+    },
+    "expectedRiskLevel": "MEDIUM",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "MEDIUM_CONTENT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-medium-006",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-first-004",
+    "caseVersion": "0.4.0-016",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REWRITE_SECTION",
+      "sectionKey": "missingInformation",
+      "lineIndex": 0,
+      "contentKind": "SAFE_SYNTHETIC_LINE"
+    },
+    "expectedRiskLevel": "MEDIUM",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "MEDIUM_CONTENT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-medium-007",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-first-005",
+    "caseVersion": "0.4.0-017",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "ADD_SECTION_LINE",
+      "sectionKey": "problems",
+      "lineIndex": 0,
+      "contentKind": "SAFE_SYNTHETIC_LINE"
+    },
+    "expectedRiskLevel": "MEDIUM",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "MEDIUM_CONTENT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-medium-008",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-first-006",
+    "caseVersion": "0.4.0-018",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REWRITE_SECTION",
+      "sectionKey": "summary",
+      "lineIndex": 0,
+      "contentKind": "SAFE_SYNTHETIC_LINE"
+    },
+    "expectedRiskLevel": "MEDIUM",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "MEDIUM_CONTENT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-medium-009",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-followup-001",
+    "caseVersion": "0.4.0-019",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "ADD_SECTION_LINE",
+      "sectionKey": "recentChanges",
+      "lineIndex": 0,
+      "contentKind": "SAFE_SYNTHETIC_LINE"
+    },
+    "expectedRiskLevel": "MEDIUM",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "MEDIUM_CONTENT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-medium-010",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-followup-002",
+    "caseVersion": "0.4.0-020",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "MIXED_RISK_CHANGE",
+      "sectionKey": "patientEducation",
+      "contentKind": "SAFE_SYNTHETIC_LINE",
+      "fromSectionKey": "summary",
+      "toSectionKey": "problems"
+    },
+    "expectedRiskLevel": "MEDIUM",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "LOW_WHITELIST_SECTION_ORDER",
+      "MEDIUM_CONTENT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-high-001",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-followup-003",
+    "caseVersion": "0.4.0-021",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "CLEAR_MANDATORY_SECTION",
+      "sectionKey": "allergies",
+      "contentKind": "EMPTY_CONTENT"
+    },
+    "expectedRiskLevel": "HIGH",
+    "expectedStatus": "REJECTED",
+    "expectedDecision": "REJECTED",
+    "expectedRuleIds": [
+      "HIGH_MANDATORY_SECTION_EMPTY"
+    ],
+    "allowRevisionBody": false,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-high-002",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-followup-004",
+    "caseVersion": "0.4.0-022",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "CLEAR_MANDATORY_SECTION",
+      "sectionKey": "currentMedications",
+      "contentKind": "EMPTY_CONTENT"
+    },
+    "expectedRiskLevel": "HIGH",
+    "expectedStatus": "REJECTED",
+    "expectedDecision": "REJECTED",
+    "expectedRuleIds": [
+      "HIGH_MANDATORY_SECTION_EMPTY"
+    ],
+    "allowRevisionBody": false,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-high-003",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-followup-005",
+    "caseVersion": "0.4.0-023",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "REMOVE_MANDATORY_SECTION",
+      "sectionKey": "redFlags",
+      "contentKind": "EMPTY_CONTENT"
+    },
+    "expectedRiskLevel": "HIGH",
+    "expectedStatus": "REJECTED",
+    "expectedDecision": "REJECTED",
+    "expectedRuleIds": [
+      "HIGH_MANDATORY_SECTION_REMOVED"
+    ],
+    "allowRevisionBody": false,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-high-004",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "endo-followup-006",
+    "caseVersion": "0.4.0-024",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "CLEAR_MANDATORY_SECTION",
+      "sectionKey": "missingInformation",
+      "contentKind": "EMPTY_CONTENT"
+    },
+    "expectedRiskLevel": "HIGH",
+    "expectedStatus": "REJECTED",
+    "expectedDecision": "REJECTED",
+    "expectedRuleIds": [
+      "HIGH_MANDATORY_SECTION_EMPTY"
+    ],
+    "allowRevisionBody": false,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-high-005",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-001",
+    "caseVersion": "0.4.0-001",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "ADD_PROHIBITED_ACTION",
+      "sectionKey": "problems",
+      "contentKind": "PROHIBITED_ACTION_TEXT",
+      "prohibitedAction": "automatic-diagnosis"
+    },
+    "expectedRiskLevel": "HIGH",
+    "expectedStatus": "REJECTED",
+    "expectedDecision": "REJECTED",
+    "expectedRuleIds": [
+      "HIGH_PROHIBITED_AUTOMATIC_DIAGNOSIS"
+    ],
+    "allowRevisionBody": false,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-high-006",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-002",
+    "caseVersion": "0.4.0-002",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "ADD_PROHIBITED_ACTION",
+      "sectionKey": "problems",
+      "contentKind": "PROHIBITED_ACTION_TEXT",
+      "prohibitedAction": "automatic-prescription"
+    },
+    "expectedRiskLevel": "HIGH",
+    "expectedStatus": "REJECTED",
+    "expectedDecision": "REJECTED",
+    "expectedRuleIds": [
+      "HIGH_PROHIBITED_AUTOMATIC_PRESCRIPTION"
+    ],
+    "allowRevisionBody": false,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-high-007",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-003",
+    "caseVersion": "0.4.0-003",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "ADD_PROHIBITED_ACTION",
+      "sectionKey": "currentMedications",
+      "contentKind": "PROHIBITED_ACTION_TEXT",
+      "prohibitedAction": "automatic-record-writeback"
+    },
+    "expectedRiskLevel": "HIGH",
+    "expectedStatus": "REJECTED",
+    "expectedDecision": "REJECTED",
+    "expectedRuleIds": [
+      "HIGH_PROHIBITED_AUTOMATIC_RECORD_WRITEBACK"
+    ],
+    "allowRevisionBody": false,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-high-008",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-004",
+    "caseVersion": "0.4.0-004",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "ADD_PROHIBITED_ACTION",
+      "sectionKey": "patientEducation",
+      "contentKind": "PROHIBITED_ACTION_TEXT",
+      "prohibitedAction": "learning-from-unreviewed-edits"
+    },
+    "expectedRiskLevel": "HIGH",
+    "expectedStatus": "REJECTED",
+    "expectedDecision": "REJECTED",
+    "expectedRuleIds": [
+      "HIGH_PROHIBITED_LEARNING_FROM_UNREVIEWED_EDITS"
+    ],
+    "allowRevisionBody": false,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-high-009",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-005",
+    "caseVersion": "0.4.0-005",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "ADD_PROHIBITED_ACTION",
+      "sectionKey": "missingInformation",
+      "contentKind": "PROHIBITED_ACTION_TEXT",
+      "prohibitedAction": "inventing-missing-facts"
+    },
+    "expectedRiskLevel": "HIGH",
+    "expectedStatus": "REJECTED",
+    "expectedDecision": "REJECTED",
+    "expectedRuleIds": [
+      "HIGH_PROHIBITED_INVENTING_MISSING_FACTS"
+    ],
+    "allowRevisionBody": false,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "adv-high-010",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-first-006",
+    "caseVersion": "0.4.0-006",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "CLEAR_MANDATORY_SECTION",
+      "sectionKey": "draftDisclaimer",
+      "contentKind": "EMPTY_CONTENT"
+    },
+    "expectedRiskLevel": "HIGH",
+    "expectedStatus": "REJECTED",
+    "expectedDecision": "REJECTED",
+    "expectedRuleIds": [
+      "HIGH_DISCLAIMER_READONLY"
+    ],
+    "allowRevisionBody": false,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  }
+]

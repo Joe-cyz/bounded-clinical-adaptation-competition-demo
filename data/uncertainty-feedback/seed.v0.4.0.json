@@ -1,0 +1,146 @@
+[
+  {
+    "fixtureId": "uncertain-001",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-001",
+    "caseVersion": "0.4.0-007",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "UNKNOWN_FIELD_CHANGE",
+      "sectionKey": "patientEducation",
+      "lineIndex": 0,
+      "contentKind": "UNKNOWN_FIELD_MARKER"
+    },
+    "expectedRiskLevel": "UNCERTAIN",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "UNCERTAIN_DEFAULT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "uncertain-002",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-002",
+    "caseVersion": "0.4.0-008",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "UNKNOWN_FIELD_CHANGE",
+      "sectionKey": "patientEducation",
+      "lineIndex": 0,
+      "contentKind": "UNKNOWN_FIELD_MARKER"
+    },
+    "expectedRiskLevel": "UNCERTAIN",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "UNCERTAIN_DEFAULT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "uncertain-003",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-003",
+    "caseVersion": "0.4.0-009",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "UNKNOWN_FIELD_CHANGE",
+      "sectionKey": "patientEducation",
+      "lineIndex": 0,
+      "contentKind": "UNKNOWN_FIELD_MARKER"
+    },
+    "expectedRiskLevel": "UNCERTAIN",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "UNCERTAIN_DEFAULT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "uncertain-004",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-004",
+    "caseVersion": "0.4.0-010",
+    "profileId": "profile-concise",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "UNKNOWN_FIELD_CHANGE",
+      "sectionKey": "patientEducation",
+      "lineIndex": 0,
+      "contentKind": "UNKNOWN_FIELD_MARKER"
+    },
+    "expectedRiskLevel": "UNCERTAIN",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "UNCERTAIN_DEFAULT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "uncertain-005",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-005",
+    "caseVersion": "0.4.0-011",
+    "profileId": "profile-structured",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "UNKNOWN_FIELD_CHANGE",
+      "sectionKey": "patientEducation",
+      "lineIndex": 0,
+      "contentKind": "UNKNOWN_FIELD_MARKER"
+    },
+    "expectedRiskLevel": "UNCERTAIN",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "UNCERTAIN_DEFAULT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  },
+  {
+    "fixtureId": "uncertain-006",
+    "fixtureVersion": "0.4.0",
+    "synthetic": true,
+    "caseId": "general-followup-006",
+    "caseVersion": "0.4.0-012",
+    "profileId": "profile-communication",
+    "profileVersion": 1,
+    "mutation": {
+      "type": "UNKNOWN_FIELD_CHANGE",
+      "sectionKey": "patientEducation",
+      "lineIndex": 0,
+      "contentKind": "UNKNOWN_FIELD_MARKER"
+    },
+    "expectedRiskLevel": "UNCERTAIN",
+    "expectedStatus": "HELD_FOR_REVIEW",
+    "expectedDecision": "PENDING",
+    "expectedRuleIds": [
+      "UNCERTAIN_DEFAULT_REVIEW"
+    ],
+    "allowRevisionBody": true,
+    "allowProfileUpdate": false,
+    "sourceNote": "项目组构造的版本化反馈夹具，用于工程门控回归，不代表临床验证。"
+  }
+]

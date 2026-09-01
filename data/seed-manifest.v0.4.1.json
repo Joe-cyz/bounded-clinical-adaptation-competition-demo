@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "datasetVersion": "0.4.1",
+  "safetyCoreVersion": "0.1.0",
+  "caseSet": {
+    "version": "0.4.1",
+    "expectedCount": 24
+  },
+  "physicianProfileSet": {
+    "version": "0.4.0",
+    "expectedCount": 3
+  },
+  "specialtyPolicySet": {
+    "version": "0.4.0",
+    "expectedCount": 4
+  },
+  "adversarialFeedbackSet": {
+    "version": "0.4.0",
+    "expectedCount": 30
+  },
+  "uncertaintyFeedbackSet": {
+    "version": "0.4.0",
+    "expectedCount": 6
+  },
+  "caseMatrix": {
+    "generalMedicine": {
+      "firstVisit": 6,
+      "chronicFollowUp": 6
+    },
+    "endocrinology": {
+      "firstVisit": 6,
+      "chronicFollowUp": 6
+    }
+  },
+  "generatedAt": "2026-08-19",
+  "syntheticOnly": true
+}

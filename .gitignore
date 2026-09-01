@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Test output
+coverage/
+test-results/
+playwright-report/
+playwright-report-*/
+playwright-report-production/
+playwright-report-demo-rehearsal/
+.codex-tmp/
+.codex-tmp/publication-private-archive/
+docs/evidence/
+*.tsbuildinfo
+
+# Local real-provider and microphone smoke material
+scripts/*real-smoke*.mjs
+scripts/*real-smoke*.test.mjs
+tests/e2e/*real*.spec.ts
+playwright.*-real*.config.ts
+src/infrastructure/providers/*real-smoke*.test.ts
+scripts/pwr-08d-real-provider-smoke.mjs
+scripts/pwr-08d-real-provider-smoke.test.mjs
+tests/e2e/pwr-08a-b-retained-evidence.spec.ts
+request-ledger.json
+safe-summary.json
+*.wav
+*.mp3
+*.m4a
+*.bin
+*.ggml
+whisper-cli.exe
+
+# Local runtime data
+data/runtime/
+*.db
+*.db-shm
+*.db-wal
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local competition source documents are kept outside version control by default.
+*.docx
+*.pdf
+*.pptx
+
+# Local policy and agent instructions are not part of the public snapshot.
+AGENTS.md
+CLAUDE.md
+PROJECT_CONTEXT_*.md
