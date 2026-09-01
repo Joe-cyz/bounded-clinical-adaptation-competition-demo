@@ -6,7 +6,7 @@
 
 ## 最简单的启动方式（Windows）
 
-如果你拿到的是 `门诊病例演示-Windows便携版.zip`：
+如果你下载的是 Windows 便携版压缩包（`bounded-clinical-adaptation-windows-portable.zip`）：
 
 1. 解压整个压缩包；
 2. 双击 `启动演示.cmd`；
