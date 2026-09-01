@@ -14,6 +14,8 @@
 
 便携版已经包含运行环境，不需要安装 Node.js、pnpm 或其他依赖。
 
+便携版下载：[GitHub Releases](https://github.com/Joe-cyz/bounded-clinical-adaptation-competition-demo/releases/latest)。
+
 ## 从源代码启动
 
 ### Windows
