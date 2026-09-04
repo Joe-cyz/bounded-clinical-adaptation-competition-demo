@@ -55,6 +55,7 @@ export type SpeechWorkflowView = SpeechWorkflowSnapshot & {
   stopRecording: () => Promise<void>;
   cancelRecording: () => Promise<void>;
   retryRecording: () => Promise<void>;
+  startNewRecording: () => Promise<void>;
   editSuggestion: (suggestionId: string, text: string, target?: SpeechTarget) => void;
   decideSuggestion: (
     suggestionId: string,
@@ -68,6 +69,7 @@ export type SpeechWorkflowView = SpeechWorkflowSnapshot & {
 type ControllerListener = (snapshot: SpeechWorkflowSnapshot) => void;
 
 const initialClockTime = Date.parse("2026-08-22T00:00:00.000Z");
+const maximumRecordingDurationMs = 15_000;
 
 function flowOptions(flow: SpeechTestFlow): {
   scenario: FakeSpeechScenario;
@@ -93,10 +95,19 @@ function flowOptions(flow: SpeechTestFlow): {
   }
 }
 
-export function speechFailureReasonText(failureReason?: SpeechFailureReason): string {
+export function speechFailureReasonText(
+  failureReason?: SpeechFailureReason,
+  errorCode?: string,
+): string {
   switch (failureReason) {
+    case "SPEECH_BROWSER_UNSUPPORTED":
+      return "当前浏览器不能录音，请改用最新版 Edge 或 Chrome，或继续手动录入。";
+    case "SPEECH_MICROPHONE_NOT_FOUND":
+      return "没有检测到可用麦克风，请连接或启用麦克风后重试。";
+    case "SPEECH_MICROPHONE_BUSY":
+      return "麦克风正被其他程序占用，请关闭占用程序后重试。";
     case "SPEECH_RECORDING_TOO_SHORT":
-      return "录音太短，请连续说话 2–10 秒。";
+      return "录音太短，请连续说话至少 1 秒。";
     case "SPEECH_NO_AUDIO_DETECTED":
       return "未检测到声音，请检查麦克风后重试。";
     case "SPEECH_BROWSER_AUDIO_FAILED":
@@ -106,6 +117,12 @@ export function speechFailureReasonText(failureReason?: SpeechFailureReason): st
     case "SPEECH_LOCAL_TRANSCRIPTION_FAILED":
       return "本地转写未完成，可重试一次或手动录入。";
     default:
+      if (errorCode === "SPEECH_SUSPECTED_PII") {
+        return "语音内容可能包含身份信息，已停止处理；请只使用虚构内容。";
+      }
+      if (errorCode === "SPEECH_UNSUPPORTED") {
+        return "当前浏览器不能录音，请改用最新版 Edge 或 Chrome，或继续手动录入。";
+      }
       return "语音转写失败，原病历内容未改变，仍可手动录入。";
   }
 }
@@ -146,6 +163,7 @@ export class SpeechWorkflowController {
   private disposed = false;
   private recordingStartedAt?: number;
   private recordingTimer?: ReturnType<typeof setInterval>;
+  private autoStopRequested = false;
 
   constructor(options: SpeechWorkflowControllerOptions) {
     this.encounterId = options.encounterId;
@@ -277,6 +295,23 @@ export class SpeechWorkflowController {
         return;
       }
       this.setSession(await this.service.startRecording(this.session));
+    });
+  }
+
+  async startNewRecording(): Promise<void> {
+    await this.run(async () => {
+      if (this.session?.suggestions.some((suggestion) => suggestion.decision === "PENDING")) {
+        throw new Error("请先处理当前语音建议，再开始下一段录音。");
+      }
+      const created = this.service.createSession({
+        encounterId: this.encounterId,
+        autoAssignHistory: this.autoAssignHistory,
+        ...(this.autoAssignHistory || this.selectedTarget === undefined
+          ? {}
+          : { selectedTarget: this.selectedTarget }),
+      });
+      this.setSession(created);
+      this.setSession(await this.service.startRecording(created));
     });
   }
 
@@ -435,11 +470,19 @@ export class SpeechWorkflowController {
     this.session = parsed;
     if (parsed.status === "RECORDING") {
       this.recordingStartedAt ??= Date.now();
+      this.autoStopRequested = false;
       if (this.recordingTimer === undefined) {
-        this.recordingTimer = setInterval(() => this.emit(), 250);
+        this.recordingTimer = setInterval(() => {
+          this.emit();
+          const elapsed = Date.now() - (this.recordingStartedAt ?? Date.now());
+          if (elapsed < maximumRecordingDurationMs || this.autoStopRequested || this.busy) return;
+          this.autoStopRequested = true;
+          void this.stopRecording();
+        }, 250);
       }
     } else {
       this.recordingStartedAt = undefined;
+      this.autoStopRequested = false;
       if (this.recordingTimer !== undefined) clearInterval(this.recordingTimer);
       this.recordingTimer = undefined;
     }
@@ -517,6 +560,7 @@ export function useSpeechWorkflow(options: {
   const stopRecording = useCallback(() => controllerRef.current?.stopRecording() ?? Promise.resolve(), []);
   const cancelRecording = useCallback(() => controllerRef.current?.cancelRecording() ?? Promise.resolve(), []);
   const retryRecording = useCallback(() => controllerRef.current?.retryRecording() ?? Promise.resolve(), []);
+  const startNewRecording = useCallback(() => controllerRef.current?.startNewRecording() ?? Promise.resolve(), []);
   const editSuggestion = useCallback((suggestionId: string, text: string, target?: SpeechTarget) => {
     controllerRef.current?.editSuggestion(suggestionId, text, target);
   }, []);
@@ -537,6 +581,7 @@ export function useSpeechWorkflow(options: {
     stopRecording,
     cancelRecording,
     retryRecording,
+    startNewRecording,
     editSuggestion,
     decideSuggestion,
     ignorePendingAndContinue,

@@ -17,6 +17,9 @@ export type BrowserAudioCaptureStatus =
   | "UNSUPPORTED"
   | "PERMISSION_REQUIRED"
   | "PERMISSION_DENIED"
+  | "MICROPHONE_NOT_FOUND"
+  | "MICROPHONE_BUSY"
+  | "FAILED"
   | "RECORDING";
 
 export type BrowserAudioCaptureResult = {
@@ -126,6 +129,46 @@ function hasBrowserAudioApis(): boolean {
     && typeof MediaRecorder !== "undefined"
     && typeof globalThis.AudioContext !== "undefined"
     && typeof globalThis.OfflineAudioContext !== "undefined";
+}
+
+function microphoneStartFailure(error: unknown): {
+  status: Extract<BrowserAudioCaptureStatus, "PERMISSION_DENIED" | "MICROPHONE_NOT_FOUND" | "MICROPHONE_BUSY" | "FAILED">;
+  failure: BrowserAudioCaptureFailure;
+} {
+  const name = error && typeof error === "object" && "name" in error
+    ? String((error as { name?: unknown }).name)
+    : "";
+  if (["NotAllowedError", "PermissionDeniedError", "SecurityError"].includes(name)) {
+    return {
+      status: "PERMISSION_DENIED",
+      failure: { code: speechErrorCodes.PERMISSION_DENIED },
+    };
+  }
+  if (["NotFoundError", "DevicesNotFoundError", "OverconstrainedError"].includes(name)) {
+    return {
+      status: "MICROPHONE_NOT_FOUND",
+      failure: {
+        code: speechErrorCodes.PROVIDER_FAILED,
+        failureReason: "SPEECH_MICROPHONE_NOT_FOUND",
+      },
+    };
+  }
+  if (["NotReadableError", "TrackStartError", "AbortError"].includes(name)) {
+    return {
+      status: "MICROPHONE_BUSY",
+      failure: {
+        code: speechErrorCodes.PROVIDER_FAILED,
+        failureReason: "SPEECH_MICROPHONE_BUSY",
+      },
+    };
+  }
+  return {
+    status: "FAILED",
+    failure: {
+      code: speechErrorCodes.PROVIDER_FAILED,
+      failureReason: "SPEECH_BROWSER_AUDIO_FAILED",
+    },
+  };
 }
 
 function clampPcm16(value: number): number {
@@ -257,9 +300,10 @@ export class BrowserAudioCaptureAdapter {
     let stream: MediaStream;
     try {
       stream = await this.getUserMedia({ audio: true });
-    } catch {
-      this.onFailure?.({ code: speechErrorCodes.PERMISSION_DENIED });
-      return "PERMISSION_DENIED";
+    } catch (error) {
+      const failure = microphoneStartFailure(error);
+      this.onFailure?.(failure.failure);
+      return failure.status;
     }
 
     if (this.cancelled) {

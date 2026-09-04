@@ -91,6 +91,30 @@ describe("PWR-05 SpeechApplicationService", () => {
     expect((await denied.startRecording(deniedSession)).status).toBe("PERMISSION_DENIED");
   });
 
+  it("preserves a controlled microphone start failure for the interface", async () => {
+    const base = createFakeSpeechRecognitionProvider();
+    const port: SpeechRecognitionPort = {
+      capability: base.capability,
+      provider: base.provider,
+      startRecording: async () => ({
+        status: "FAILED",
+        errorCode: speechErrorCodes.PROVIDER_FAILED,
+        failureReason: "SPEECH_MICROPHONE_NOT_FOUND",
+      }),
+      stopAndTranscribe: base.stopAndTranscribe.bind(base),
+      cancel: base.cancel.bind(base),
+    };
+    const speech = service(port, "missing-microphone");
+    const created = speech.createSession({ encounterId: "encounter-speech-001" });
+    const failed = await speech.startRecording(created);
+
+    expect(failed).toMatchObject({
+      status: "FAILED",
+      errorCode: speechErrorCodes.PROVIDER_FAILED,
+      failureReason: "SPEECH_MICROPHONE_NOT_FOUND",
+    });
+  });
+
   it("runs recording, transcription and review with auto history assignment", async () => {
     const audit = createInMemorySpeechAuditSink();
     const speech = service(createFakeSpeechRecognitionProvider(), "success", audit.sink);

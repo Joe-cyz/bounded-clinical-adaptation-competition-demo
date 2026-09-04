@@ -66,6 +66,9 @@ export const speechSessionStatusSchema = z.enum([
 export type SpeechSessionStatus = z.infer<typeof speechSessionStatusSchema>;
 
 export const speechFailureReasonSchema = z.enum([
+  "SPEECH_BROWSER_UNSUPPORTED",
+  "SPEECH_MICROPHONE_NOT_FOUND",
+  "SPEECH_MICROPHONE_BUSY",
   "SPEECH_RECORDING_TOO_SHORT",
   "SPEECH_NO_AUDIO_DETECTED",
   "SPEECH_BROWSER_AUDIO_FAILED",
@@ -243,7 +246,11 @@ export const speechPortStartResultSchema = z.discriminatedUnion("status", [
   z.object({ status: z.literal("RECORDING") }).strict(),
   z.object({ status: z.literal("PERMISSION_REQUIRED") }).strict(),
   z.object({ status: z.literal("PERMISSION_DENIED") }).strict(),
-  z.object({ status: z.literal("FAILED"), errorCode: speechPortFailureCodeSchema }).strict(),
+  z.object({
+    status: z.literal("FAILED"),
+    errorCode: speechPortFailureCodeSchema,
+    failureReason: speechFailureReasonSchema.optional(),
+  }).strict(),
 ]);
 export type SpeechPortStartResult = z.infer<typeof speechPortStartResultSchema>;
 

@@ -9,6 +9,7 @@ import {
   speechCapabilitySchema,
   speechErrorCodes,
   speechFailureReasonSchema,
+  speechPortStartResultSchema,
   speechPortSuccessSchema,
   speechSessionSchema,
   structureTranscript,
@@ -55,6 +56,9 @@ function session(overrides: Partial<SpeechSession> = {}): SpeechSession {
 describe("PWR-05 speech domain", () => {
   it("accepts only fixed failure reasons on failed sessions", () => {
     const reasons = [
+      "SPEECH_BROWSER_UNSUPPORTED",
+      "SPEECH_MICROPHONE_NOT_FOUND",
+      "SPEECH_MICROPHONE_BUSY",
       "SPEECH_RECORDING_TOO_SHORT",
       "SPEECH_NO_AUDIO_DETECTED",
       "SPEECH_BROWSER_AUDIO_FAILED",
@@ -106,6 +110,15 @@ describe("PWR-05 speech domain", () => {
       },
       extra: "not allowed",
     }).success).toBe(false);
+    expect(speechPortStartResultSchema.parse({
+      status: "FAILED",
+      errorCode: speechErrorCodes.PROVIDER_FAILED,
+      failureReason: "SPEECH_MICROPHONE_BUSY",
+    })).toEqual({
+      status: "FAILED",
+      errorCode: speechErrorCodes.PROVIDER_FAILED,
+      failureReason: "SPEECH_MICROPHONE_BUSY",
+    });
   });
 
   it("rejects out-of-order or out-of-duration transcript segments", () => {

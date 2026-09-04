@@ -147,12 +147,31 @@ describe("BrowserAudioCaptureAdapter", () => {
   it("rejects permission failure without retaining a stream", async () => {
     const onFailure = vi.fn();
     const capture = createBrowserAudioCaptureAdapter({
-      getUserMedia: vi.fn(async () => { throw new Error("permission denied"); }),
+      getUserMedia: vi.fn(async () => { throw new DOMException("permission denied", "NotAllowedError"); }),
       onFailure,
     });
 
     expect(await capture.start()).toBe("PERMISSION_DENIED");
     expect(onFailure).toHaveBeenCalledWith({ code: "SPEECH_PERMISSION_DENIED" });
+    expect(capture.status).toBe("READY");
+  });
+
+  it.each([
+    ["NotFoundError", "MICROPHONE_NOT_FOUND", "SPEECH_MICROPHONE_NOT_FOUND"],
+    ["NotReadableError", "MICROPHONE_BUSY", "SPEECH_MICROPHONE_BUSY"],
+    ["UnknownError", "FAILED", "SPEECH_BROWSER_AUDIO_FAILED"],
+  ] as const)("classifies microphone start error %s", async (name, status, failureReason) => {
+    const onFailure = vi.fn();
+    const capture = createBrowserAudioCaptureAdapter({
+      getUserMedia: vi.fn(async () => { throw new DOMException("controlled", name); }),
+      onFailure,
+    });
+
+    expect(await capture.start()).toBe(status);
+    expect(onFailure).toHaveBeenCalledWith({
+      code: "SPEECH_PROVIDER_FAILED",
+      failureReason,
+    });
     expect(capture.status).toBe("READY");
   });
 

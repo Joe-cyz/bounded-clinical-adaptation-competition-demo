@@ -1,4 +1,4 @@
-import { describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { syntheticMedicalRecords } from "@/data/seed-loader";
 import { createManualSyntheticInitialRecord } from "@/domain/manual-synthetic-record";
@@ -7,7 +7,7 @@ import type { SpeechSessionStatus } from "@/domain/speech";
 import { SpeechWorkflowController, speechFailureReasonText } from "./speech-workflow-controller";
 
 function createController(
-  flow: "review" | "failed" | "cancelled" | "transcribing" = "review",
+  flow: "permission-required" | "review" | "failed" | "cancelled" | "transcribing" = "review",
   onRecordChange: (record: typeof syntheticMedicalRecords[number]) => void = () => undefined,
 ): SpeechWorkflowController {
   return new SpeechWorkflowController({
@@ -27,14 +27,56 @@ async function waitForStatus(controller: SpeechWorkflowController, status: Speec
 }
 
 describe("SpeechWorkflowController", () => {
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
   it("maps controlled speech failure reasons to safe physician-facing messages", () => {
-    expect(speechFailureReasonText("SPEECH_RECORDING_TOO_SHORT")).toBe("录音太短，请连续说话 2–10 秒。");
+    expect(speechFailureReasonText("SPEECH_BROWSER_UNSUPPORTED")).toContain("Edge 或 Chrome");
+    expect(speechFailureReasonText("SPEECH_MICROPHONE_NOT_FOUND")).toContain("没有检测到可用麦克风");
+    expect(speechFailureReasonText("SPEECH_MICROPHONE_BUSY")).toContain("其他程序占用");
+    expect(speechFailureReasonText("SPEECH_RECORDING_TOO_SHORT")).toBe("录音太短，请连续说话至少 1 秒。");
     expect(speechFailureReasonText("SPEECH_NO_AUDIO_DETECTED")).toBe("未检测到声音，请检查麦克风后重试。");
     expect(speechFailureReasonText("SPEECH_BROWSER_AUDIO_FAILED")).toBe("浏览器未能处理录音，请重新录制。");
     expect(speechFailureReasonText("SPEECH_LOCAL_SERVICE_UNAVAILABLE")).toBe("本地语音服务不可用，请重新启动演示。");
     expect(speechFailureReasonText("SPEECH_LOCAL_TRANSCRIPTION_FAILED")).toBe("本地转写未完成，可重试一次或手动录入。");
+    expect(speechFailureReasonText(undefined, "SPEECH_SUSPECTED_PII")).toContain("可能包含身份信息");
     expect(speechFailureReasonText()).toBe("语音转写失败，原病历内容未改变，仍可手动录入。");
     expect(speechFailureReasonText("UNCONTROLLED" as never)).toBe("语音转写失败，原病历内容未改变，仍可手动录入。");
+  });
+
+  it("automatically stops and transcribes at the 15-second limit", async () => {
+    vi.useFakeTimers();
+    const controller = createController("permission-required");
+    await controller.initialize();
+    const starting = controller.startRecording();
+    await vi.advanceTimersByTimeAsync(120);
+    await starting;
+    expect(controller.snapshot().session?.status).toBe("RECORDING");
+
+    await vi.advanceTimersByTimeAsync(15_000);
+    await vi.advanceTimersByTimeAsync(200);
+
+    expect(controller.snapshot().session?.status).toBe("NEEDS_REVIEW");
+    expect(controller.snapshot().recordingDurationMs).toBeUndefined();
+    controller.dispose();
+  });
+
+  it("starts another recording only after every suggestion is processed", async () => {
+    const controller = createController("review");
+    await controller.initialize();
+
+    await controller.startNewRecording();
+    expect(controller.snapshot().session?.status).toBe("NEEDS_REVIEW");
+    expect(controller.snapshot().error).toContain("先处理当前语音建议");
+
+    await controller.ignorePendingAndContinue();
+    const completedSessionId = controller.snapshot().session?.id;
+    await controller.startNewRecording();
+
+    expect(controller.snapshot().session?.status).toBe("RECORDING");
+    expect(controller.snapshot().session?.id).not.toBe(completedSessionId);
+    controller.dispose();
   });
 
   it("runs the page test flow through the fake port, application service and audit sink", async () => {

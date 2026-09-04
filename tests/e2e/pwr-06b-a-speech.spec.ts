@@ -149,8 +149,9 @@ async function expectReadyState(panel: ReturnType<typeof voicePanel>): Promise<v
 
 async function expectRecordingState(panel: ReturnType<typeof voicePanel>): Promise<void> {
   await expect(panel.getByText("录音中", { exact: true })).toBeVisible();
-  await expect(panel.getByText(/最长15秒，将自动停止/u)).toBeVisible();
-  await expect(panel.getByRole("button", { name: "停止录音", exact: true })).toBeVisible();
+  await expect(panel.getByText(/00:\d{2} \/ 00:15 · 到时自动识别/u)).toBeVisible();
+  await expect(panel.getByRole("progressbar", { name: "录音时长", exact: true })).toBeVisible();
+  await expect(panel.getByRole("button", { name: "结束并识别", exact: true })).toBeVisible();
   await expect(panel.getByRole("button", { name: "取消", exact: true })).toBeVisible();
   await expect(panel.getByRole("button", { name: "开始录音", exact: true })).toHaveCount(0);
 }
@@ -159,7 +160,7 @@ async function expectTranscribingState(panel: ReturnType<typeof voicePanel>): Pr
   await expect(panel.getByText("正在转写，请稍候。", { exact: true })).toBeVisible();
   await expect(panel.getByRole("button", { name: "取消", exact: true })).toBeVisible();
   await expect(panel.getByRole("button", { name: "开始录音", exact: true })).toHaveCount(0);
-  await expect(panel.getByRole("button", { name: "停止录音", exact: true })).toHaveCount(0);
+  await expect(panel.getByRole("button", { name: "结束并识别", exact: true })).toHaveCount(0);
 }
 
 async function expectReviewState(panel: ReturnType<typeof voicePanel>): Promise<void> {
@@ -183,7 +184,7 @@ async function expectPermissionDeniedState(panel: ReturnType<typeof voicePanel>)
 
 async function expectFailureState(panel: ReturnType<typeof voicePanel>): Promise<void> {
   await expect(panel.getByText("语音转写失败，原病历内容未改变，仍可手动录入。", { exact: true })).toBeVisible();
-  await expect(panel.getByRole("button", { name: "重新开始", exact: true })).toBeVisible();
+  await expect(panel.getByRole("button", { name: "重新录制", exact: true })).toBeVisible();
   await expect(panel.getByText("录音中", { exact: true })).toHaveCount(0);
   await expect(panel.getByText("待医生处理", { exact: true })).toHaveCount(0);
 }
@@ -205,7 +206,7 @@ async function capturePublicScreenshot(page: Page, name: string, viewport: Viewp
   await page.setViewportSize(viewport);
   await page.goto("/encounters/demo/record");
   const panel = voicePanel(page);
-  await expect(panel.getByText("语音未配置", { exact: true })).toBeVisible();
+  await expect(panel.getByText("只读演示不录音", { exact: true })).toBeVisible();
   await expect(panel.getByText("识别结果（0）", { exact: true })).toBeVisible();
   await expect(panel.getByRole("button", { name: "开始录音", exact: true })).toHaveCount(0);
   return saveScreenshot(page, name);
@@ -232,7 +233,7 @@ test.describe("PWR-06B-A local fake speech workflow", () => {
     expect(await page.evaluate(() => (window as Window & { __pwr06bGetUserMediaCalls?: number }).__pwr06bGetUserMediaCalls)).toBe(0);
     await panel.getByRole("button", { name: "开始录音", exact: true }).click();
     await expectRecordingState(panel);
-    await panel.getByRole("button", { name: "停止录音", exact: true }).click();
+    await panel.getByRole("button", { name: "结束并识别", exact: true }).click();
     await expectTranscribingState(panel);
     await expect(panel.getByText("待医生处理", { exact: true })).toBeVisible();
     expect(await page.evaluate(() => (window as Window & { __pwr06bGetUserMediaCalls?: number }).__pwr06bGetUserMediaCalls)).toBe(0);
@@ -270,8 +271,8 @@ test.describe("PWR-06B-A local fake speech workflow", () => {
     await expect(page.locator('input[name="editableRecord"]')).toHaveValue(/晨起乏力/u);
     await page.getByRole("button", { name: "保存病历", exact: true }).click();
     await expect(page.getByText("修订 #1 已保存。", { exact: true })).toBeVisible();
-    await expect(page.getByRole("button", { name: "进入诊疗参考", exact: true })).toHaveCount(0);
-    await expect(page.locator("#reference-form")).toHaveCount(0);
+    await expect(page.getByRole("button", { name: "进入AI参考", exact: true })).toBeVisible();
+    await expect(page.locator("#reference-form")).toHaveCount(1);
   });
 
   test("keeps permission denied, failure, cancellation and manual editing recoverable", async ({ page }) => {
@@ -400,7 +401,7 @@ test.describe("PWR-06B-A public-demo boundary", () => {
     const requests = trackRequests(page);
     await page.goto("/encounters/demo/record");
     const panel = voicePanel(page);
-    await expect(panel.getByText("语音未配置", { exact: true })).toBeVisible();
+    await expect(panel.getByText("只读演示不录音", { exact: true })).toBeVisible();
     await expect(panel.getByText("识别结果（0）", { exact: true })).toBeVisible();
     await expect(panel.getByRole("button", { name: "开始录音", exact: true })).toHaveCount(0);
     await expect(panel.getByRole("checkbox", { name: "自动归入病史" })).toBeDisabled();

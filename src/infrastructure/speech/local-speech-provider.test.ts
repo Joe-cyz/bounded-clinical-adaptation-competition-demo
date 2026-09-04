@@ -7,8 +7,8 @@ import {
 import { createLocalSpeechRecognitionProvider } from "./local-speech-provider";
 
 function fakeCapture(overrides: Partial<{
-  status: "READY" | "UNSUPPORTED" | "PERMISSION_DENIED" | "RECORDING";
-  start: () => Promise<"RECORDING" | "UNSUPPORTED" | "PERMISSION_DENIED">;
+  status: "READY" | "UNSUPPORTED" | "PERMISSION_DENIED" | "MICROPHONE_NOT_FOUND" | "MICROPHONE_BUSY" | "FAILED" | "RECORDING";
+  start: () => Promise<"RECORDING" | "UNSUPPORTED" | "PERMISSION_DENIED" | "MICROPHONE_NOT_FOUND" | "MICROPHONE_BUSY" | "FAILED">;
   stop: () => Promise<{
     audioBytes: Uint8Array;
     durationMs: number;
@@ -183,8 +183,27 @@ describe("LocalSpeechRecognitionProvider", () => {
       { status: "READY" },
       { capture: fakeCapture({ start: vi.fn(async () => "UNSUPPORTED" as const) }) },
     );
+    const missing = createLocalSpeechRecognitionProvider(
+      { status: "READY" },
+      { capture: fakeCapture({ start: vi.fn(async () => "MICROPHONE_NOT_FOUND" as const) }) },
+    );
+    const busy = createLocalSpeechRecognitionProvider(
+      { status: "READY" },
+      { capture: fakeCapture({ start: vi.fn(async () => "MICROPHONE_BUSY" as const) }) },
+    );
     expect(await denied.startRecording("speech-denied-001")).toEqual({ status: "PERMISSION_DENIED" });
-    expect((await unsupported.startRecording("speech-unsupported-001")).status).toBe("FAILED");
+    expect(await unsupported.startRecording("speech-unsupported-001")).toMatchObject({
+      status: "FAILED",
+      failureReason: "SPEECH_BROWSER_UNSUPPORTED",
+    });
+    expect(await missing.startRecording("speech-missing-001")).toMatchObject({
+      status: "FAILED",
+      failureReason: "SPEECH_MICROPHONE_NOT_FOUND",
+    });
+    expect(await busy.startRecording("speech-busy-001")).toMatchObject({
+      status: "FAILED",
+      failureReason: "SPEECH_MICROPHONE_BUSY",
+    });
   });
 
   it("aborts the request, releases capture and sends idempotent DELETE on cancel", async () => {

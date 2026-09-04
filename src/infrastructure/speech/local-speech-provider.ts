@@ -108,7 +108,32 @@ export class LocalSpeechRecognitionProvider implements SpeechRecognitionPort {
       }
       if (result === "PERMISSION_REQUIRED") return { status: "PERMISSION_REQUIRED" };
       if (result === "PERMISSION_DENIED") return { status: "PERMISSION_DENIED" };
-      return { status: "FAILED", errorCode: result === "UNSUPPORTED" ? "SPEECH_UNSUPPORTED" : "SPEECH_PROVIDER_FAILED" };
+      if (result === "UNSUPPORTED") {
+        return {
+          status: "FAILED",
+          errorCode: "SPEECH_UNSUPPORTED",
+          failureReason: "SPEECH_BROWSER_UNSUPPORTED",
+        };
+      }
+      if (result === "MICROPHONE_NOT_FOUND") {
+        return {
+          status: "FAILED",
+          errorCode: "SPEECH_PROVIDER_FAILED",
+          failureReason: "SPEECH_MICROPHONE_NOT_FOUND",
+        };
+      }
+      if (result === "MICROPHONE_BUSY") {
+        return {
+          status: "FAILED",
+          errorCode: "SPEECH_PROVIDER_FAILED",
+          failureReason: "SPEECH_MICROPHONE_BUSY",
+        };
+      }
+      return {
+        status: "FAILED",
+        errorCode: "SPEECH_PROVIDER_FAILED",
+        failureReason: "SPEECH_BROWSER_AUDIO_FAILED",
+      };
     } finally {
       if (this.startingSessionId === sessionId) this.startingSessionId = undefined;
     }

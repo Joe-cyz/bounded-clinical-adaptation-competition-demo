@@ -84,7 +84,7 @@ test.describe("PWR-05 speech foundation", () => {
     await expect(panel.getByText("需要麦克风权限", { exact: true })).toBeVisible();
     await panel.getByRole("button", { name: "开始录音", exact: true }).click();
     await expect(panel.getByText("录音中", { exact: true })).toBeVisible();
-    await panel.getByRole("button", { name: "停止录音", exact: true }).click();
+    await panel.getByRole("button", { name: "结束并识别", exact: true }).click();
     await expect(panel.getByText("正在转写，请稍候。", { exact: true })).toBeVisible();
     await expect(panel.getByText("待医生处理", { exact: true })).toBeVisible();
     await expect(panel.getByText("识别结果", { exact: true })).toBeVisible();
@@ -102,8 +102,8 @@ test.describe("PWR-05 speech foundation", () => {
     await page.goto(`${page.url().split("?")[0]}?__pwr5Speech=failed`);
     const failedPanel = speechPanel(page);
     await expect(failedPanel.getByText("语音转写失败，原病历内容未改变，仍可手动录入。", { exact: true })).toBeVisible();
-    await failedPanel.getByRole("button", { name: "重新开始", exact: true }).click();
-    await expect(failedPanel.getByText("需要麦克风权限", { exact: true })).toBeVisible();
+    await failedPanel.getByRole("button", { name: "重新录制", exact: true }).click();
+    await expect(failedPanel.getByText("录音中", { exact: true })).toBeVisible();
   });
 
   test("keeps recognition results collapsed until the physician opens them and accepts or ignores them", async ({ page }) => {
@@ -111,7 +111,7 @@ test.describe("PWR-05 speech foundation", () => {
     const requests = trackUnsafeRequests(page);
     await openLocalRecord(page, "review");
     const panel = speechPanel(page);
-    await expect(panel.getByText("本地语音可用", { exact: true })).toBeVisible();
+    await expect(panel.getByText("离线语音可用", { exact: true })).toBeVisible();
     const details = panel.locator("details").filter({ hasText: "识别结果" }).first();
     expect(await details.evaluate((element) => (element as HTMLDetailsElement).open)).toBe(false);
     await details.locator("summary").click();
@@ -128,12 +128,13 @@ test.describe("PWR-05 speech foundation", () => {
     await panel.getByRole("button", { name: "忽略", exact: true }).click();
     await expect(panel.getByText("已忽略", { exact: true })).toBeVisible();
     await expect(panel.getByText("识别结果已处理", { exact: true })).toBeVisible();
+    await expect(panel.getByRole("button", { name: "再录一段", exact: true })).toBeVisible();
 
     await page.getByRole("button", { name: "保存病历", exact: true }).click();
     await expect(page.getByText("修订 #1 已保存。", { exact: true })).toBeVisible();
-    await page.getByRole("button", { name: "进入诊疗参考", exact: true }).click();
+    await page.getByRole("button", { name: "进入AI参考", exact: true }).click();
     await expect(page).toHaveURL(/\/reference$/u);
-    await expect(page.getByRole("heading", { name: "诊疗参考", level: 1 })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "AI参考", level: 1 })).toBeVisible();
     expect(requests.externalRequests).toEqual([]);
   });
 
@@ -195,10 +196,10 @@ test.describe("PWR-05 speech foundation", () => {
     await cancel.click();
     await expect(panel.getByText("本次语音已取消，原病历内容未改变。", { exact: true })).toBeVisible();
     await expect(panel.getByText("识别结果", { exact: true })).toHaveCount(0);
-    await expect(panel.getByRole("button", { name: "重新开始", exact: true })).toBeEnabled();
-    await expect(panel.getByRole("button", { name: "重新开始", exact: true })).toHaveCount(1);
-    await panel.getByRole("button", { name: "重新开始", exact: true }).click();
-    await expect(panel.getByText("需要麦克风权限", { exact: true })).toBeVisible();
+    await expect(panel.getByRole("button", { name: "重新录制", exact: true })).toBeEnabled();
+    await expect(panel.getByRole("button", { name: "重新录制", exact: true })).toHaveCount(1);
+    await panel.getByRole("button", { name: "重新录制", exact: true }).click();
+    await expect(panel.getByText("录音中", { exact: true })).toBeVisible();
     expect(requests.externalRequests).toEqual([]);
     expect(requests.postRequests).toEqual([]);
   });
@@ -211,7 +212,7 @@ test.describe("PWR-05 speech foundation", () => {
     await page.getByRole("button", { name: "保存病历", exact: true }).click();
     await expect(page.getByText("修订 #1 已保存。", { exact: true })).toBeVisible();
 
-    const reference = page.getByRole("button", { name: "进入诊疗参考", exact: true });
+    const reference = page.getByRole("button", { name: "进入AI参考", exact: true });
     await reference.click();
     const prompt = panel.getByRole("status", { name: "未处理语音建议" });
     await expect(prompt).toContainText("仍有 2 条识别结果未处理");
@@ -236,7 +237,7 @@ test.describe("PWR-05 speech foundation", () => {
     await page.getByRole("button", { name: "保存病历", exact: true }).click();
     await expect(page.getByText("修订 #1 已保存。", { exact: true })).toBeVisible();
 
-    const reference = page.getByRole("button", { name: "进入诊疗参考", exact: true });
+    const reference = page.getByRole("button", { name: "进入AI参考", exact: true });
     await reference.click();
     const prompt = panel.getByRole("status", { name: "未处理语音建议" });
     await expect(prompt).toBeVisible();
@@ -283,13 +284,13 @@ test.describe("PWR-05 speech foundation", () => {
     const requests = trackUnsafeRequests(page);
     await page.goto("/encounters/demo/record");
     const panel = speechPanel(page);
-    await expect(panel.getByText("语音未配置", { exact: true })).toBeVisible();
+    await expect(panel.getByText("只读演示不录音", { exact: true })).toBeVisible();
     const autoAssign = panel.getByRole("checkbox", { name: "自动归入病史" });
     await expect(autoAssign).toBeChecked();
     await expect(autoAssign).toBeDisabled();
     await expect(panel.getByRole("button", { name: "开始录音", exact: true })).toHaveCount(0);
     await page.goto("/encounters/demo/record?__pwr5Speech=review");
-    await expect(speechPanel(page).getByText("语音未配置", { exact: true })).toBeVisible();
+    await expect(speechPanel(page).getByText("只读演示不录音", { exact: true })).toBeVisible();
     await page.getByRole("button", { name: "保存病历", exact: true }).click();
     await expect(page.getByRole("status")).toHaveText("当前为只读演示，未保存任何内容");
     expect(requests.postRequests).toEqual([]);

@@ -272,6 +272,9 @@ export class SpeechApplicationService {
       ...(targetStatus === "FAILED" && result.status === "FAILED"
         ? { errorCode: safeErrorCode(result.errorCode) }
         : {}),
+      ...(targetStatus === "FAILED" && result.status === "FAILED" && result.failureReason !== undefined
+        ? { failureReason: result.failureReason }
+        : {}),
     });
     this.appendAudit(next, current.status);
     return next;

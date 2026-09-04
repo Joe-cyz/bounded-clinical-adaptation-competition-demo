@@ -71,7 +71,7 @@ function confidenceText(suggestion: TranscriptSuggestion): string {
 
 function formatRecordingDuration(durationMs: number | undefined): string {
   const seconds = Math.min(15, Math.max(0, Math.floor((durationMs ?? 0) / 1_000)));
-  return `${String(seconds).padStart(2, "0")}秒`;
+  return `00:${String(seconds).padStart(2, "0")}`;
 }
 
 export function SpeechPanel({
@@ -89,10 +89,12 @@ export function SpeechPanel({
   const promptWasVisible = useRef(false);
 
   const configured = capability.status === "READY" && !readOnly;
-  const capabilityLabel = capability.status === "UNSUPPORTED"
+  const capabilityLabel = readOnly && capability.reason === "PUBLIC_DEMO_READ_ONLY"
+    ? "只读演示不录音"
+    : capability.status === "UNSUPPORTED"
     ? "当前环境不支持"
     : capability.status === "READY"
-      ? "本地语音可用"
+      ? "离线语音可用"
       : "语音未配置";
   const status = workflow?.session?.status;
   const suggestions = workflow?.suggestions ?? [];
@@ -150,15 +152,29 @@ export function SpeechPanel({
         <span className={styles.unconfigured}>{capabilityLabel}</span>
       </div>
 
+      <p className={styles.speechPrivacyNote}>
+        {configured
+          ? "录音只在本机转写，不上传云端；识别结果需确认后才会写入病历。"
+          : readOnly
+            ? "在线只读页面不会请求麦克风，也不会保存语音。"
+            : "当前没有可用的离线语音组件，手动录入仍可正常使用。"}
+      </p>
+
       {configured && workflow && status !== undefined && status !== "CANCELLED" && (
         <div className={styles.speechStatus} role="status" aria-live="polite">
           <span>{statusText(status)}</span>
           {status === "RECORDING" && (
             <>
               <span className={styles.speechStatusDetail}>
-                {formatRecordingDuration(workflow.recordingDurationMs)} · 最长15秒，将自动停止
+                {formatRecordingDuration(workflow.recordingDurationMs)} / 00:15 · 到时自动识别
               </span>
               <span className={styles.speechStatusDetail}>录音仅用于本次转写，停止、取消或失败后删除。</span>
+              <progress
+                aria-label="录音时长"
+                className={styles.speechProgress}
+                max={15_000}
+                value={Math.min(workflow.recordingDurationMs ?? 0, 15_000)}
+              />
             </>
           )}
         </div>
@@ -166,7 +182,9 @@ export function SpeechPanel({
 
       {configured && workflow && (status === undefined || status === "PERMISSION_REQUIRED" || status === "PERMISSION_DENIED") && (
         <div className={styles.speechControls}>
-          {status === "PERMISSION_DENIED" && <p className={styles.speechError}>麦克风权限未授予，仍可继续手动录入。</p>}
+          {status === "PERMISSION_DENIED" && (
+            <p className={styles.speechError}>麦克风权限未授予。请在浏览器地址栏左侧允许麦克风，然后重试；手动录入不受影响。</p>
+          )}
           <button
             className={styles.speechPrimaryButton}
             disabled={workflow.busy}
@@ -180,7 +198,7 @@ export function SpeechPanel({
 
       {configured && workflow && status === "RECORDING" && (
         <div className={styles.speechControls}>
-          <button className={styles.speechPrimaryButton} disabled={workflow.busy} type="button" onClick={() => void workflow.stopRecording()}>停止录音</button>
+          <button className={styles.speechPrimaryButton} disabled={workflow.busy} type="button" onClick={() => void workflow.stopRecording()}>结束并识别</button>
           <button className={styles.speechTextButton} disabled={workflow.busy} type="button" onClick={() => void workflow.cancelRecording()}>取消</button>
         </div>
       )}
@@ -194,15 +212,21 @@ export function SpeechPanel({
 
       {configured && workflow && status === "FAILED" && (
         <div className={styles.speechControls}>
-          <p className={styles.speechError}>{speechFailureReasonText(workflow.session?.failureReason)}</p>
-          <button className={styles.speechTextButton} disabled={workflow.busy} type="button" onClick={() => void workflow.retryRecording()}>重新开始</button>
+          <p className={styles.speechError}>{speechFailureReasonText(workflow.session?.failureReason, workflow.session?.errorCode)}</p>
+          <button className={styles.speechTextButton} disabled={workflow.busy} type="button" onClick={() => void workflow.startNewRecording()}>重新录制</button>
         </div>
       )}
 
       {configured && workflow && status === "CANCELLED" && (
         <div className={styles.speechControls}>
           <p className={styles.speechMuted}>本次语音已取消，原病历内容未改变。</p>
-          <button className={styles.speechTextButton} disabled={workflow.busy} type="button" onClick={() => void workflow.retryRecording()}>重新开始</button>
+          <button className={styles.speechTextButton} disabled={workflow.busy} type="button" onClick={() => void workflow.startNewRecording()}>重新录制</button>
+        </div>
+      )}
+
+      {configured && workflow && status === "ACCEPTED" && (
+        <div className={styles.speechControls}>
+          <button className={styles.speechPrimaryButton} disabled={workflow.busy} type="button" onClick={() => void workflow.startNewRecording()}>再录一段</button>
         </div>
       )}
 
@@ -297,7 +321,7 @@ export function SpeechPanel({
           <summary>
             <span>识别结果</span><span aria-label="识别结果数量">（0）</span>
           </summary>
-          <p>当前未配置语音转写服务，手动录入仍可用。</p>
+          <p>{readOnly ? "当前是只读展示，语音入口未开启。" : "当前未配置离线语音组件，手动录入仍可用。"}</p>
         </details>
       )}
 

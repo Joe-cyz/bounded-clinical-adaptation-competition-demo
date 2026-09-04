@@ -30,6 +30,12 @@ set "DEEPSEEK_API_KEY="
 set "PWR08D_REAL_PROVIDER_ENABLED=false"
 set "PWR08C_FAKE_FETCH=false"
 set "SPEECH_PROVIDER=disabled"
+if exist "speech-runtime\whisper-cli.exe" if exist "speech-runtime\ggml-small.bin" (
+  set "SPEECH_PROVIDER=local-whisper"
+  set "SPEECH_LOCAL_WHISPER_EXECUTABLE_PATH=%CD%\speech-runtime\whisper-cli.exe"
+  set "SPEECH_LOCAL_WHISPER_MODEL_PATH=%CD%\speech-runtime\ggml-small.bin"
+  set "SPEECH_LOCAL_WHISPER_TEMP_ROOT=%CD%\data\runtime\speech-temp"
+)
 set "DATABASE_PATH=data/runtime/competition-demo.sqlite"
 
 if "%DEMO_CHECK_ONLY%"=="1" exit /b 0
