@@ -2,7 +2,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { syntheticMedicalRecords } from "@/data/seed-loader";
 import { createManualSyntheticInitialRecord } from "@/domain/manual-synthetic-record";
-import type { SpeechSessionStatus } from "@/domain/speech";
+import { speechErrorCodes, type SpeechRecognitionPort, type SpeechSessionStatus } from "@/domain/speech";
 
 import { SpeechWorkflowController, speechFailureReasonText } from "./speech-workflow-controller";
 
@@ -16,6 +16,48 @@ function createController(
     fixture: { flow },
     onRecordChange,
   });
+}
+
+function createThreeSuggestionPort(): SpeechRecognitionPort {
+  const provider = {
+    providerType: "FAKE_TEST" as const,
+    providerVersion: "three-suggestion-test-1.0.0",
+    networkUsed: false,
+    retainedAudio: false as const,
+  };
+  return {
+    capability: { status: "READY" },
+    provider,
+    async startRecording() {
+      return { status: "RECORDING" };
+    },
+    async stopAndTranscribe(sessionId) {
+      return {
+        ok: true,
+        sessionId,
+        provider,
+        durationMs: 300,
+        transcript: {
+          text: "合成口述一。合成口述二。合成口述三。",
+          durationMs: 300,
+          segments: [
+            { id: "segment-001", text: "合成口述一。", startMs: 0, endMs: 100, confidenceStatus: "NOT_PROVIDED" as const },
+            { id: "segment-002", text: "合成口述二。", startMs: 100, endMs: 200, confidenceStatus: "NOT_PROVIDED" as const },
+            { id: "segment-003", text: "合成口述三。", startMs: 200, endMs: 300, confidenceStatus: "NOT_PROVIDED" as const },
+          ],
+        },
+      };
+    },
+    async cancel(sessionId) {
+      return {
+        ok: false,
+        sessionId,
+        provider,
+        errorCode: speechErrorCodes.CANCELLED,
+        durationMs: 0,
+      };
+    },
+  };
 }
 
 async function waitForStatus(controller: SpeechWorkflowController, status: SpeechSessionStatus): Promise<void> {
@@ -112,6 +154,30 @@ describe("SpeechWorkflowController", () => {
     await controller.ignorePendingAndContinue();
     expect(controller.snapshot().session?.status).toBe("ACCEPTED");
     expect(controller.audit.every((event) => !JSON.stringify(event.metadata).includes("recordPayload"))).toBe(true);
+  });
+
+  it("processes all three review suggestions without reporting an invalid session transition", async () => {
+    const controller = new SpeechWorkflowController({
+      encounterId: "encounter-pwr5-controller-three-001",
+      initialRecord: syntheticMedicalRecords[0],
+      port: createThreeSuggestionPort(),
+      onRecordChange: () => undefined,
+    });
+    await controller.initialize();
+    await controller.startRecording();
+    await controller.stopRecording();
+
+    const suggestions = controller.snapshot().session!.suggestions;
+    controller.decideSuggestion(suggestions[0].id, "IGNORED");
+    controller.decideSuggestion(suggestions[1].id, "ACCEPTED", "presentIllness");
+
+    expect(controller.snapshot().session?.status).toBe("PARTIALLY_ACCEPTED");
+    expect(controller.snapshot().error).toBeUndefined();
+
+    controller.decideSuggestion(suggestions[2].id, "IGNORED");
+    expect(controller.snapshot().session?.status).toBe("ACCEPTED");
+    expect(controller.snapshot().error).toBeUndefined();
+    controller.dispose();
   });
 
   it("keeps the original record unchanged on provider failure and cancellation", async () => {

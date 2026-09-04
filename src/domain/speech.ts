@@ -430,6 +430,13 @@ export function decideTranscriptSuggestion(
   const suggestions = [...current.suggestions];
   suggestions[index] = nextSuggestion;
   const nextStatus = processedSuggestionStatus(suggestions);
+  if (nextStatus === current.status) {
+    return speechSessionSchema.parse({
+      ...current,
+      suggestions,
+      updatedAt,
+    });
+  }
   return transitionSpeechSession(
     speechSessionSchema.parse({ ...current, suggestions }),
     nextStatus,

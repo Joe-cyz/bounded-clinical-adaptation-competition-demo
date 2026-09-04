@@ -1,6 +1,6 @@
 {
   "name": "bounded-clinical-adaptation",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "type": "module",
   "description": "Open-source Chinese outpatient record demo created as a competition case using synthetic data.",

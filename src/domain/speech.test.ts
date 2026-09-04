@@ -194,6 +194,32 @@ describe("PWR-05 speech domain", () => {
     );
   });
 
+  it("processes three suggestions one by one while the session remains partially accepted", () => {
+    const reviewed = session({
+      status: "NEEDS_REVIEW",
+      transcript: {
+        text: "合成口述一。合成口述二。合成口述三。",
+        durationMs: 300,
+        segments: [
+          { id: "segment-001", text: "合成口述一。", startMs: 0, endMs: 100, confidenceStatus: "NOT_PROVIDED" },
+          { id: "segment-002", text: "合成口述二。", startMs: 100, endMs: 200, confidenceStatus: "NOT_PROVIDED" },
+          { id: "segment-003", text: "合成口述三。", startMs: 200, endMs: 300, confidenceStatus: "NOT_PROVIDED" },
+        ],
+      },
+      suggestions: [suggestion("suggestion-001"), suggestion("suggestion-002"), suggestion("suggestion-003")],
+    });
+
+    const first = decideTranscriptSuggestion(reviewed, "suggestion-001", "IGNORED", "2026-08-22T00:00:01.000Z");
+    const second = decideTranscriptSuggestion(first, "suggestion-002", "ACCEPTED", "2026-08-22T00:00:02.000Z");
+    const third = decideTranscriptSuggestion(second, "suggestion-003", "IGNORED", "2026-08-22T00:00:03.000Z");
+
+    expect(first.status).toBe("PARTIALLY_ACCEPTED");
+    expect(second.status).toBe("PARTIALLY_ACCEPTED");
+    expect(second.updatedAt).toBe("2026-08-22T00:00:02.000Z");
+    expect(second.suggestions.map((item) => item.decision)).toEqual(["IGNORED", "ACCEPTED", "PENDING"]);
+    expect(third.status).toBe("ACCEPTED");
+  });
+
   it("maps transcript segments without inferring clinical meaning", () => {
     const suggestions = structureTranscript({
       sessionId: "speech-session-001",
