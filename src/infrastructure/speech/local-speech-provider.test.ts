@@ -58,6 +58,32 @@ function successResponse(sessionId: string) {
 }
 
 describe("LocalSpeechRecognitionProvider", () => {
+  it("binds the default browser fetch before storing it", async () => {
+    const capture = fakeCapture();
+    const originalFetch = globalThis.fetch;
+    const browserFetch = vi.fn(function (this: unknown) {
+      if (this !== globalThis) throw new TypeError("Illegal invocation");
+      return Promise.resolve(successResponse("speech-native-fetch-001"));
+    }) as unknown as typeof fetch;
+    globalThis.fetch = browserFetch;
+
+    try {
+      const provider = createLocalSpeechRecognitionProvider(
+        { status: "READY" },
+        { capture },
+      );
+      await provider.startRecording("speech-native-fetch-001");
+
+      await expect(provider.stopAndTranscribe("speech-native-fetch-001")).resolves.toMatchObject({
+        ok: true,
+        sessionId: "speech-native-fetch-001",
+      });
+      expect(browserFetch).toHaveBeenCalledOnce();
+    } finally {
+      globalThis.fetch = originalFetch;
+    }
+  });
+
   it("does not request capture until startRecording and posts a strict WAV DTO", async () => {
     const capture = fakeCapture();
     let postedForm: FormData | undefined;

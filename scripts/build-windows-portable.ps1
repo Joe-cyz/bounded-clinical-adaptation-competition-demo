@@ -70,7 +70,10 @@ try {
 
   $standaloneRoot = Join-Path $projectRoot ".next\standalone"
   New-Item -ItemType Directory -Path $stagingDirectory -Force | Out-Null
-  Copy-DirectoryTree -Source $standaloneRoot -Destination $stagingDirectory -ExcludeJunctions
+  Copy-DirectoryTree -Source (Join-Path $standaloneRoot ".next") -Destination (Join-Path $stagingDirectory ".next") -ExcludeJunctions
+  Copy-DirectoryTree -Source (Join-Path $standaloneRoot "node_modules") -Destination (Join-Path $stagingDirectory "node_modules") -ExcludeJunctions
+  Copy-Item -LiteralPath (Join-Path $standaloneRoot "package.json") -Destination $stagingDirectory -Force
+  Copy-Item -LiteralPath (Join-Path $standaloneRoot "server.js") -Destination $stagingDirectory -Force
 
   $sourceNodeModules = Join-Path $projectRoot "node_modules"
   $linkCommands = @("@echo off")

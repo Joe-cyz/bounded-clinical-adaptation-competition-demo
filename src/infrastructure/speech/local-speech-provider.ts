@@ -81,7 +81,7 @@ export class LocalSpeechRecognitionProvider implements SpeechRecognitionPort {
   constructor(capability: SpeechCapability, dependencies: LocalSpeechProviderDependencies = {}) {
     this.capability = capability;
     this.capture = dependencies.capture ?? dependencies.createCapture?.() ?? createBrowserAudioCaptureAdapter();
-    this.request = dependencies.request ?? fetch;
+    this.request = dependencies.request ?? globalThis.fetch.bind(globalThis);
     this.endpoint = dependencies.endpoint ?? "/api/speech/transcriptions";
   }
 
